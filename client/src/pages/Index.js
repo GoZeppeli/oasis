@@ -39,6 +39,7 @@ export default function Index() {
                 body: JSON.stringify({data, title}),
                 }
             );
+            console.log(response.json())
         } 
         fr.readAsText(x.target.files[0]);
     }

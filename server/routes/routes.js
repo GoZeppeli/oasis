@@ -20,6 +20,7 @@ module.exports = function(app) {
             title: req.body.title,
             content : req.body.data
         })
+        console.log(article)
         res.json({ status: 'ok' })
     })
 }
