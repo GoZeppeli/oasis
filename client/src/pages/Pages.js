@@ -28,7 +28,6 @@ export default function Pages() {
     if(article){
         doc = new DOMParser().parseFromString(article.content, "text/html");
         document.querySelector("#output").innerHTML = ""
-        console.log(doc.querySelector('.page-body'))
         document.querySelector("#output").appendChild(doc.querySelector('.page-body'))
     }
 
