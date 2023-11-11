@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Index() {
+    const [articles, setArticles] = useState(null);
     var doc = ""
     async function grab(){
       const response = await fetch(`http://localhost:1000/`,
@@ -12,11 +14,11 @@ export default function Index() {
                 }
       );
       const data = await response.json()
-      console.log(data.content)
+      setArticles(data.content)
     }
     useEffect( () => {
       grab()
-    })
+    }, [])
     
 
     async function add(x){
@@ -46,6 +48,13 @@ export default function Index() {
       <>
         <input type="file" accept=".html" onChange={(e) => {add(e)}}></input>
         <div id="output"></div>
+        {articles ? (
+          articles.map((a)=>{
+            return(<Link to={`/page/${a._id}`}>{a.title}</Link>)
+          })
+        ) : (
+          <p>no!</p>
+        )}
       </>
     );
   }

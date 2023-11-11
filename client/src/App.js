@@ -7,6 +7,7 @@ import {
 
 import Layout from "./pages/Layout";
 import Index from "./pages/Index";
+import Pages from "./pages/Pages";
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     element: <Layout/>, 
     children: [
       { path: "/", Component: Index},
+      { path: "/page/:_id", Component: Pages},
     ]
   }
 ]);

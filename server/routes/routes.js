@@ -10,6 +10,11 @@ module.exports = function(app) {
         return res.json({ status: "ok", content : articles });
     });
 
+    app.post("/grab", async (req, res) => {
+        let article = await Article.findOne({_id : req.body.params})
+        return res.json({ status: "ok", content : article });
+    });
+
     app.post('/hello', async (req, res) => {
         let article = await Article.create({
             title: req.body.title,
