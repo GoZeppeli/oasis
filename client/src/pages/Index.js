@@ -27,7 +27,9 @@ export default function Index() {
             doc = new DOMParser().parseFromString(fr.result, "text/xml");
             document.querySelector("#output").appendChild(doc.querySelector('.page-body'))
             const nav = document.querySelector(".table_of_contents");
-            nav.remove()
+            if(nav){
+              nav.remove()
+            }
             const data = document.querySelector('#output').innerHTML
             const title = doc.querySelector('.page-title').innerHTML
             const response = await fetch(`http://localhost:1000/hello`,
