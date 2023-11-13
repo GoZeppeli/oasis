@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 export default function Index() {
     const [articles, setArticles] = useState(null);
@@ -48,7 +49,8 @@ export default function Index() {
 
 
     return (
-      <>
+      <>  
+        <Header></Header>
         <input type="file" accept=".html" onChange={(e) => {add(e)}}></input>
         <div id="output"></div>
         {articles ? (

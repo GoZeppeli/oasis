@@ -1,4 +1,24 @@
-p {
+:root {
+  --red-white : #fff3f0;
+  --red-red : #e72116;
+  --red-bordeaux : #ce7a7a;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../public/fonts/HelveticaNeueLTStd-Bd.otf');
+}
+
+@font-face {
+  font-family: 'generalSans';
+  src: url('../public/fonts/GeneralSans-Variable.ttf');
+}
+
+body {
+  background-color: var(--red-white);
+}
+
+.page-body p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -6,7 +26,7 @@ p {
   margin-inline-end: 0px;
 }
 
-h1 {
+.page-body h1 {
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
@@ -16,7 +36,7 @@ h1 {
   font-weight: bold;
 }
 
-blockquote {
+.page-body blockquote {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -24,7 +44,7 @@ blockquote {
   margin-inline-end: 40px;
 }
 
-h2 {
+.page-body h2 {
   display: block;
   font-size: 1.3em;
   margin-block-start: 0.83em;
@@ -32,4 +52,73 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+}
+
+.header-div {
+  overflow: hidden;
+  height: 200px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-div img {
+  filter: brightness(0.8);
+  position: absolute;
+  width: 100vw;
+}
+
+.header-div h1 {
+  position: absolute;
+  z-index: 10;
+  bottom: -20px;
+  left: -5px;
+  margin: 0;
+  font-family: 'helvetica', 'sans-serif';
+  color: var(--red-white);
+  font-size: 90px;
+  cursor: pointer;
+}
+
+.header-div #menu {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  height: 100px;
+  fill: var(--red-red);
+  transition: 0.3s ease;
+}
+
+.menuLink:hover svg {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.menuLink:hover .menuH {
+  right: 53px;
+}
+
+.menuLink {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menuH {
+  transition: 0.3s ease;
+  position: absolute;
+  right: 56px;
+  top: 48px;
+  font-family: 'generalSans';
+  font-size: 30px;
+  color: var(--red-white);
+}
+
+.relative {
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 0;
 }
