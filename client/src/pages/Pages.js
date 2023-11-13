@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
 
 export default function Pages() {
@@ -8,7 +8,7 @@ export default function Pages() {
     const parsed = JSON.parse(string)
     const params = parsed._id
     async function grab(){
-        const response = await fetch(`http://localhost:1000/grab`,
+        const response = await fetch(`/api/grabOne`,
                 {
                 method: "POST",
                 headers: {
@@ -24,6 +24,7 @@ export default function Pages() {
     useEffect( () => {
         grab()
     }, [])
+    
     var doc = ''
     if(article){
         doc = new DOMParser().parseFromString(article.content, "text/html");

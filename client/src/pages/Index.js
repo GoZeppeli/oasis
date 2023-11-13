@@ -6,7 +6,7 @@ export default function Index() {
     const [articles, setArticles] = useState(null);
     var doc = ""
     async function grab(){
-      const response = await fetch(`http://localhost:1000/`,
+      const response = await fetch(`/api/grabAll`,
                 {
                 method: "GET",
                 headers: {
@@ -16,6 +16,7 @@ export default function Index() {
       );
       const data = await response.json()
       setArticles(data.content)
+
     }
     useEffect( () => {
       grab()
@@ -33,7 +34,7 @@ export default function Index() {
             }
             const data = document.querySelector('#output').innerHTML
             const title = doc.querySelector('.page-title').innerHTML
-            const response = await fetch(`http://localhost:1000/hello`,
+            const response = await fetch(`http://localhost:1000/api/hello`,
                 {
                 method: "POST",
                 headers: {
