@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Layout/>, 
     children: [
       { path: "/", Component: Index},
-      { path: "/page/:_id", Component: Pages},
+      { path: "/page/:id", Component: Pages},
     ]
   }
 ]);

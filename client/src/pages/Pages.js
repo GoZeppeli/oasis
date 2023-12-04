@@ -6,7 +6,7 @@ export default function Pages() {
     let id = useParams()
     const string = JSON.stringify(id)
     const parsed = JSON.parse(string)
-    const params = parsed._id
+    const params = parsed.id
     async function grab(){
         const response = await fetch(`/api/grabOne/${params}`,
                 {
