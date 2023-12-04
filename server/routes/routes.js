@@ -10,7 +10,7 @@ module.exports = function(app) {
         return res.json({ status: "ok", content : articles });
     });
 
-    app.post("/api/grabOne/:id", async (req, res) => {
+    app.get("/api/grabOne/:id", async (req, res) => {
         console.log("1")
         var id = req.params.id;
         console.log(id)

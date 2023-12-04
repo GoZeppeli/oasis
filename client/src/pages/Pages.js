@@ -10,11 +10,10 @@ export default function Pages() {
     async function grab(){
         const response = await fetch(`/api/grabOne/${params}`,
                 {
-                method: "POST",
+                method: "GET",
                 headers: {
                     'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({params}),
+                }
                 }
             );
         const data = await response.json()
