@@ -8,7 +8,7 @@ export default function Pages() {
     const parsed = JSON.parse(string)
     const params = parsed._id
     async function grab(){
-        const response = await fetch(`/api/grabOne`,
+        const response = await fetch(`/api/grabOne/${params}`,
                 {
                 method: "POST",
                 headers: {

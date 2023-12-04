@@ -11,8 +11,9 @@ module.exports = function(app) {
         return res.json({ status: "ok", content : articles });
     });
 
-    app.post("/api/grabOne", async (req, res) => {
-        let article = await Article.findOne({_id : req.body.params})
+    app.post("/api/grabOne/:id", async (req, res) => {
+        var id = req.params.id;
+        let article = await Article.findOne({_id : id})
         return res.json({ status: "ok", content : article });
     });
 
