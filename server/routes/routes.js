@@ -6,13 +6,14 @@ module.exports = function(app) {
     })
 
     app.get("/api/grabAll", async (req, res) => {
-        console.log("1")
         let articles = await Article.find({})
         return res.json({ status: "ok", content : articles });
     });
 
     app.post("/api/grabOne/:id", async (req, res) => {
+        console.log("1")
         var id = req.params.id;
+        console.log(id)
         let article = await Article.findOne({_id : id})
         return res.json({ status: "ok", content : article });
     });
