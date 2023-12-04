@@ -6,6 +6,7 @@ module.exports = function(app) {
     })
 
     app.get("/api/grabAll", async (req, res) => {
+        console.log("1")
         let articles = await Article.find({})
         return res.json({ status: "ok", content : articles });
     });
