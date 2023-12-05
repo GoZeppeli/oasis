@@ -1,7 +1,7 @@
 import './App.css';
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -10,7 +10,7 @@ import Index from "./pages/Index";
 import Pages from "./pages/Pages";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout/>, 
     children: [

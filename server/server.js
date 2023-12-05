@@ -9,7 +9,6 @@ app.use(express.json())
 mongoose.connect(process.env.DB_URI);
 require("./routes/routes")(app);
 
-console.log("2")
 
 app.listen(1000, () => {
     console.log("server started on 1000")

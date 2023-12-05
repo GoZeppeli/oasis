@@ -11,7 +11,6 @@ module.exports = function(app) {
     });
 
     app.get("/api/grabOne/:id", async (req, res) => {
-        console.log("1")
         var id = req.params.id;
         console.log(id)
         let article = await Article.findOne({_id : id})
