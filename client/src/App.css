@@ -122,3 +122,28 @@ body {
   width: 100vw;
   z-index: 0;
 }
+
+#output {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .header-div {
+       height: 120px;
+   }
+   .header-div #menu {
+    height: 60px;
+    top: 34px;
+   }
+  .menuH {
+    font-size: 20px;
+    top: 30px;
+    right: 48px;
+  }
+  .header-div h1{
+    font-size: 60px;
+    bottom: -15px;
+  }
+}

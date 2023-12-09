@@ -8,6 +8,7 @@ import {
 import Layout from "./pages/Layout";
 import Index from "./pages/Index";
 import Pages from "./pages/Pages";
+import Protect from "./pages/Protect";
 
 
 const router = createHashRouter([
@@ -16,6 +17,7 @@ const router = createHashRouter([
     children: [
       { path: "/", Component: Index},
       { path: "/page/:id", Component: Pages},
+      { path: "/protect", Component: Protect},
     ]
   }
 ]);

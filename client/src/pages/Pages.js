@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
+import Header from "./Header";
 
 export default function Pages() {
     const [article, setArticle] = useState(null);
@@ -27,13 +28,19 @@ export default function Pages() {
     var doc = ''
     if(article){
         doc = new DOMParser().parseFromString(article.content, "text/html");
-        document.querySelector("#output").innerHTML = ""
-        document.querySelector("#output").appendChild(doc.querySelector('.page-body'))
+        document.querySelector("#display").innerHTML = ""
+        document.querySelector("#display").appendChild(doc.querySelector('.page-body'))
     }
 
     return (
       <>
-        <div id="output"></div>
+        <Header></Header>
+        {article ? (
+          <h1>{article.title}</h1>
+        ) : (
+            <h1></h1>
+        )}
+        <div id="display"></div>
       </>
     );
   }
