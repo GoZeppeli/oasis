@@ -99,6 +99,19 @@ body::-webkit-scrollbar-thumb {
   transition: 0.6s;
 }
 
+.navTitle {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: -5px;
+  margin: 0;
+  font-family: 'helvetica', 'sans-serif';
+  color: var(--red-white);
+  font-size: 90px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
 .menu {
   position: absolute;
   right: 40px;
@@ -189,6 +202,50 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(-45deg);
 }
 
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.ul {
+  color: var(--red-white);
+  margin: 0 30px -25px 0;
+  font-size: 80px;
+  font-family: 'generalSans', sans-serif;
+  text-decoration: underline 0.08em #fff3f000;
+  text-underline-offset: 0.01em;
+  transition: 0.5s;
+}
+
+.ul:hover {
+  text-decoration: underline 0.08em #fff3f0;
+  text-underline-offset: 0.07em;
+}
+
+.here {
+  position: absolute;
+  bottom : 5px;
+  right: 400px;
+  height: 70px;
+  width: 80px;
+  color: var(--red-white);
+  font-family: 'generalSans';
+  font-weight: 600;
+}
+
+.here span {
+  position: absolute;
+  top: 15px;
+  left: -45px;
+}
+
 
 @media screen and (max-width: 600px) {
   .header-div {
@@ -212,4 +269,14 @@ body::-webkit-scrollbar-thumb {
 .block {
   width: 100px;
   height: 3000px;
+}
+
+#arrow {
+  fill: var(--red-white);
+  height: 30px;
+  width: 40px;
+  transform: rotate(75deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

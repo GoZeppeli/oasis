@@ -23,11 +23,9 @@ export default function Index() {
     }, [])
     
 
-
-
     return (
       <>  
-        <Header></Header>
+        <Header bottom="350px" right="320px"></Header>
         {articles ? (
           articles.map((a)=>{
             return(<><Link to={`/page/${a._id}`}>{a.title}</Link><br></br></>)
