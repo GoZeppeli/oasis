@@ -16,6 +16,19 @@
 
 body {
   background-color: var(--red-white);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: #ce7a7a50;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--red-bordeaux);
 }
 
 .page-body p {
@@ -62,33 +75,45 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
+  user-select: none;
+  transition: 0.6s;
 }
 
 .header-div img {
   filter: brightness(0.8);
   position: absolute;
   width: 100vw;
+  top: 0;
 }
 
 .header-div h1 {
   position: absolute;
   z-index: 10;
-  bottom: -20px;
+  top: 112px;
   left: -5px;
   margin: 0;
   font-family: 'helvetica', 'sans-serif';
   color: var(--red-white);
   font-size: 90px;
   cursor: pointer;
+  transition: 0.6s;
 }
 
-.header-div #menu {
+.menu {
   position: absolute;
-  right: 20px;
+  right: 40px;
   top: 50px;
   height: 100px;
   fill: var(--red-red);
   transition: 0.3s ease;
+}
+
+#redMenu {
+  fill: var(--red-red);
+}
+
+#whiteMenu {
+  fill: var(--red-white);
 }
 
 .menuLink:hover svg {
@@ -96,7 +121,7 @@ body {
 }
 
 .menuLink:hover .menuH {
-  right: 53px;
+  right: 73px;
 }
 
 .menuLink {
@@ -107,7 +132,7 @@ body {
 .menuH {
   transition: 0.3s ease;
   position: absolute;
-  right: 56px;
+  right: 76px;
   top: 48px;
   font-family: 'generalSans';
   font-size: 30px;
@@ -129,21 +154,62 @@ body {
 
 
 
+.NavRed {
+  user-select: none;
+  background-color: var(--red-red);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  visibility: collapse;
+  left: 0;
+  z-index: 50;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.showNav {
+  visibility: visible;
+  opacity: 1;
+}
+
+.crossRectangle {
+  background-color: var(--red-red);
+  width: 9px;
+  height: 40px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 88px;
+  top: 79px;
+  border-radius: 10px;
+}
+
+.moreDeg {
+  transform: rotate(-45deg);
+}
+
+
 @media screen and (max-width: 600px) {
   .header-div {
        height: 120px;
    }
-   .header-div #menu {
+   .header-div .menu {
     height: 60px;
     top: 34px;
    }
   .menuH {
     font-size: 20px;
     top: 30px;
-    right: 48px;
+    right: 68px;
   }
   .header-div h1{
     font-size: 60px;
-    bottom: -15px;
+    top: 63px;
   }
+}
+
+.block {
+  width: 100px;
+  height: 3000px;
 }
