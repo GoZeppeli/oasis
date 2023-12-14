@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   z-index: 10;
   top: 112px;
-  left: -5px;
+  left: -2px;
   margin: 0;
   font-family: 'helvetica', 'sans-serif';
   color: var(--red-white);
@@ -103,7 +103,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   z-index: 10;
   top: 50px;
-  left: -5px;
+  left: -2px;
   margin: 0;
   font-family: 'helvetica', 'sans-serif';
   color: var(--red-white);
@@ -131,10 +131,6 @@ body::-webkit-scrollbar-thumb {
 
 .menuLink:hover svg {
   transform: rotate(10deg) scale(1.1);
-}
-
-.menuLink:hover .menuH {
-  right: 73px;
 }
 
 .menuLink {
@@ -256,13 +252,13 @@ a {
     top: 34px;
    }
   .menuH {
-    font-size: 20px;
-    top: 30px;
-    right: 68px;
+    font-size: 18px;
+    top: 33px;
+    right: 62px;
   }
   .header-div h1{
     font-size: 60px;
-    top: 63px;
+    top: 62px;
   }
 }
 
@@ -279,4 +275,52 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .ul {
+      font-size: 50px;
+      margin: 0 0 -10px 0;  
+   }
+   .navigation {
+    text-align: left;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -40%);
+   }
+   .navTitle {
+    display: none;
+   }
+   .here {
+    display: none;
+   }
+}
+
+@media screen and (max-height: 650px) {
+  .ul {
+      font-size: 50px;
+      margin: 0 0 -10px 0;  
+   }
+   .navigation {
+    text-align: left;
+    left: 10px;
+   }
+   .navTitle {
+    display: none;
+   }
+   .here {
+    display: none;
+   }
+}
+
+@media screen and (max-height: 350px) {
+  .ul {
+      font-size: 30px;
+   }
+}
+
+@media screen and (max-width: 300px) {
+  .ul {
+      font-size: 30px;
+   }
 }
