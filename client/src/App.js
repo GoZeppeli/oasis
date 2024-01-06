@@ -1,4 +1,6 @@
 import './App.css';
+import './index.css';
+import './page.css';
 
 import {
   createHashRouter,
@@ -9,6 +11,7 @@ import Layout from "./pages/Layout";
 import Index from "./pages/Index";
 import Pages from "./pages/Pages";
 import Protect from "./pages/Protect";
+import Browse from "./pages/Browse";
 
 
 const router = createHashRouter([
@@ -18,6 +21,7 @@ const router = createHashRouter([
       { path: "/", Component: Index},
       { path: "/page/:id", Component: Pages},
       { path: "/protect", Component: Protect},
+      { path: "/browse", Component: Browse},
     ]
   }
 ]);

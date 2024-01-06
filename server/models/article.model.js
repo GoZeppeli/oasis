@@ -4,6 +4,7 @@ const {Schema, model} = mongoose;
 const Article = new Schema({
     title: {type: String},
     content: {type: String},
+    img: {type: String},
 });
 
 const ArticleModel = model('Article', Article);

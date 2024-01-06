@@ -4,14 +4,28 @@
   --red-bordeaux : #ce7a7a;
 }
 
+body {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'helvetica';
   src: url('../public/fonts/HelveticaNeueLTStd-Bd.otf');
 }
 
 @font-face {
+  font-family: 'bogam';
+  src: url('../public/fonts/BOGAM.OTF');
+}
+
+@font-face {
   font-family: 'generalSans';
   src: url('../public/fonts/GeneralSans-Variable.ttf');
+}
+
+@font-face {
+  font-family: 'rowan';
+  src: url('../public/fonts/ROWAN-VARIABLE.TTF');
 }
 
 body {
@@ -32,6 +46,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-body p {
+  font-family: 'rowan';
+  font-weight: 470;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -46,7 +62,7 @@ body::-webkit-scrollbar-thumb {
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: bold;
+  font-weight: black;
 }
 
 .page-body blockquote {
@@ -71,7 +87,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   height: 200px;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -102,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 .navTitle {
   position: absolute;
   z-index: 10;
-  top: 50px;
+  top: 111px;
   left: -2px;
   margin: 0;
   font-family: 'helvetica', 'sans-serif';
@@ -138,6 +154,14 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
+.fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+}
+
+
 .menuH {
   transition: 0.3s ease;
   position: absolute;
@@ -146,6 +170,7 @@ body::-webkit-scrollbar-thumb {
   font-family: 'generalSans';
   font-size: 30px;
   color: var(--red-white);
+  user-select: none;
 }
 
 .relative {
@@ -192,6 +217,7 @@ body::-webkit-scrollbar-thumb {
   right: 88px;
   top: 79px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .moreDeg {
@@ -247,7 +273,7 @@ a {
   .header-div {
        height: 120px;
    }
-   .header-div .menu {
+   .menu {
     height: 60px;
     top: 34px;
    }
@@ -259,6 +285,16 @@ a {
   .header-div h1{
     font-size: 60px;
     top: 62px;
+  }
+  .relative {
+    height: 120px;
+  }
+
+  .crossRectangle {
+    width: 6px;
+    height: 30px;
+    right: 68px;
+    top: 50px;
   }
 }
 
