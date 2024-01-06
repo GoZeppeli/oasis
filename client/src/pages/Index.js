@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { createElement, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import {isMobile} from 'react-device-detect';
@@ -10,15 +10,21 @@ export default function Index() {
     function preview(x) {
         var prevH1 = document.querySelector('.preview h1')
         var prevIMG = document.querySelector('.preview .img')
-        var prevA = document.querySelector('.preview a')
+        var a = document.createElement("a");
+        var span = document.createElement("span");
+        var inside = document.createTextNode("lire l'article");
+        span.appendChild(inside);
+        a.appendChild(span);
+        var prevP = document.querySelector('.preview p')
         if(prevH1){
           prevH1.innerHTML = `${x.title}`
         }
         if(prevIMG){
           prevIMG.style.backgroundImage = `url(${x.img}.jpg)`
         }
-        if(prevA){
-          prevA.href = `#/page/${x.link}`
+        if(prevP){
+          prevP.innerHTML = `${x.description} `
+          prevP.appendChild(a)
         }
     }
 
@@ -32,9 +38,8 @@ export default function Index() {
                 }
       );
       const data = await response.json()
+      preview({title : data.content[0].title, img: data.content[0].img, link : data.content[0]._id, description: data.content[0].description})
       setArticles(data.content)
-      preview({title : data.content[0].title, img: data.content[0].img, link : data.content[0]._id})
-
     }
     useEffect( () => {
       grab()
@@ -61,6 +66,7 @@ export default function Index() {
 			});
 		}
 
+    const arrI = Array.from(Array(10).keys())
     
 
 
@@ -96,13 +102,18 @@ export default function Index() {
             })
             
           ) : (
-            <p>en cours de chargement...</p>
+            <div className="grey-index">
+              <div className="boxten">
+                <span>1.</span>
+                <p>vive sankara !</p>
+              </div>
+            </div>
           )}
           </div> 
           <div className="preview">
             <div className="img"></div>
             <h1></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a><span>lire l'article</span></a></p>
+            <p><a><span>lire l'article</span></a></p>
           </div>
           </>
         ) : (
@@ -129,13 +140,22 @@ export default function Index() {
             })
             
           ) : (
-            <p>no!</p>
+            arrI.map(() => {
+              return (
+                <div className="grey-index">
+                  <div className="boxten">
+                    <span>1.</span>
+                    <p>vive sankara !</p>
+                  </div>
+                </div>
+              )
+            })
           )}
           </div>  
           <div className="preview">
             <div className="img"></div>
             <h1></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a><span>lire l'article</span></a></p>
+            <p></p>
           </div>
           </>
         )}

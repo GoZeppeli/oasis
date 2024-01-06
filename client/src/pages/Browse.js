@@ -63,7 +63,7 @@ export default function Browse() {
                         <div className="card-results">
                           <div className="arrow-results-wrapper"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>7-Arrow Up</title><g id="_7-Arrow_Up" data-name="7-Arrow Up"><path d="M3.41,2H16V0H1A1,1,0,0,0,0,1V17H2V3.41L30.29,31.71l1.41-1.41Z"/></g></svg></div></div>
                           <div className="title-results"><h1>{a.title}</h1></div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <Link  to={`/page/${a._id}`}><span>lire l'article</span></Link ></p>
+                          <p>{a.description} <Link  to={`/page/${a._id}`}><span>lire l'article</span></Link ></p>
                         </div>
                       </Link>
                       <div className="separation"></div>

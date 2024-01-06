@@ -162,11 +162,12 @@ input[type="range"]::-moz-range-track {
 
 .results {
     display: flex;
-    justify-content: top;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 100px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .box-result p {
@@ -188,8 +189,6 @@ input[type="range"]::-moz-range-track {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 80%;
-    margin: 0 auto;
     transition: 0.3s;
     text-overflow: ellipsis;
 }
@@ -226,7 +225,7 @@ input[type="range"]::-moz-range-track {
 .separation {
     background-color: var(--red-red);
     height: 1px;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 

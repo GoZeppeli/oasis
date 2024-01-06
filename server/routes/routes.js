@@ -68,6 +68,7 @@ module.exports = function(app) {
             title: req.body.title,
             content : req.body.data,
             img: empty,
+            description: empty,
         })
         res.json({ status: 'ok' })
     })
