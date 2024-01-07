@@ -96,12 +96,14 @@ export default function Pages() {
         if(window.innerWidth <= 600){
             var arr = [{'name': "p", "px": "24"}, {'name': "h1", "px": "45"}, {'name': "blockquote", "px": "20"}, {'name': "h2", "px": "25"}]
             arr.map((a) => {
-                window['dis' + a.name] = [...document.querySelectorAll(`#display ${a.name}`)];
-                window['style' + a.name] = getComputedStyle(window['dis' + a.name][0]).fontSize
-                window['nopx' + a.name] = window['style' + a.name].replace("px", "")
-                window['dis' + a.name].map((d) => {
-                    d.style.fontSize = `${window['nopx' + a.name] - (a.px /2)}px` 
-                })
+                if(document.querySelector(`#display ${a.name}`)){
+                    window['dis' + a.name] = [...document.querySelectorAll(`#display ${a.name}`)];
+                    window['style' + a.name] = getComputedStyle(document.querySelector(`#display ${a.name}`)).fontSize
+                    window['nopx' + a.name] = window['style' + a.name].replace("px", "")
+                    window['dis' + a.name].map((d) => {
+                        d.style.fontSize = `${window['nopx' + a.name] - (a.px /2)}px` 
+                    })
+                }
             })
         }
     }

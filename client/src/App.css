@@ -89,6 +89,24 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
 }
 
+@media screen and (max-width: 600px) {
+  .page-body p {
+    font-size: 12px;
+  }
+  
+  .page-body h1 {
+    font-size: 22.5px;
+  }
+  
+  .page-body blockquote {
+    font-size: 10px;
+  }
+  
+  .page-body h2 {
+    font-size: 12.5px;
+  }
+}
+
 .header-div {
   overflow: hidden;
   height: 200px;
