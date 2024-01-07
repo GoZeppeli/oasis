@@ -94,7 +94,7 @@ export default function Index() {
             articles.map((a, index) => {
               return(
                 <div>
-              <div className="boxten" id={index} onClick={() => preview({title : a.title,img: a.img, link: a._id})}>
+              <div className="boxten" id={index} onClick={() => preview({title : a.title,img: a.img, link: a._id, description : a.description})}>
                 <span>{index + 1}.</span>
                 <p id={index} >{a.title}</p>
               </div>
@@ -132,7 +132,7 @@ export default function Index() {
             articles.map((a, index) => {
               return(
               <Link to={`/page/${a._id}`}>
-              <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id})}>
+              <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id, description : a.description})}>
                 <span>{index + 1}.</span>
                 <p id={index} >{a.title}</p>
               </div>
