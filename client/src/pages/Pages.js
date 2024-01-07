@@ -49,21 +49,57 @@ export default function Pages() {
 
     function inputRange(){
         var val = document.querySelector(".slider").value
-        var dis = document.querySelector("#display")
+        var disP = [...document.querySelectorAll("#display p")]
+        var disH1 = [...document.querySelectorAll("#display h1")]
+        var disBQ = [...document.querySelectorAll("#display blockquote")]
+        var disH2 = [...document.querySelectorAll("#display h2")]
         var val50 = val - 50
         if(val50 >= 0){
-            var add = val50 * (1/100) * 24 + 24
-            dis.style.fontSize = `${add}px`
+            var addP = val50 * (1/100) * 24 + 24
+            disP.map((dp) => {
+                dp.style.fontSize = `${addP}px`
+            })
+            var addH1 = val50 * (1/100) * 45 + 45
+            disH1.map((dh1) => {
+                dh1.style.fontSize = `${addH1}px`
+            })
+            var addBQ = val50 * (1/100) * 20 + 20
+            disBQ.map((dbq) => {
+                dbq.style.fontSize = `${addBQ}px`
+            })
+            var addH2 = val50 * (1/100) * 25 + 25
+            disH2.map((dh2) => {
+                dh2.style.fontSize = `${addH2}px`
+            })
         } else {
-            var add = val50 * (1/150)* 24 + 24
-            dis.style.fontSize = `${add}px`
+            var addP = val50 * (1/150)* 24 + 24
+            disP.map((dp) => {
+                dp.style.fontSize = `${addP}px`
+            })
+            var addH1 = val50 * (1/150) * 45 + 45
+            disH1.map((dh1) => {
+                dh1.style.fontSize = `${addH1}px`
+            })
+            var addBQ = val50 * (1/150) * 20 + 20
+            disBQ.map((dbq) => {
+                dbq.style.fontSize = `${addBQ}px`
+            })
+            var addH2 = val50 * (1/150) * 25 + 25
+            disH2.map((dh2) => {
+                dh2.style.fontSize = `${addH2}px`
+            })
         }
 
         if(window.innerWidth <= 600){
-            var dis = document.querySelector("#display")
-            var style = getComputedStyle(dis).fontSize
-            var nopx = style.replace("px", "")
-            dis.style.fontSize = `${nopx - 12}px`
+            var arr = [{'name': "p", "px": "24"}, {'name': "h1", "px": "45"}, {'name': "blockquote", "px": "20"}, {'name': "h2", "px": "25"}]
+            arr.map((a) => {
+                window['dis' + a.name] = [...document.querySelectorAll(`#display ${a.name}`)];
+                window['style' + a.name] = getComputedStyle(window['dis' + a.name][0]).fontSize
+                window['nopx' + a.name] = window['style' + a.name].replace("px", "")
+                window['dis' + a.name].map((d) => {
+                    d.style.fontSize = `${window['nopx' + a.name] - (a.px /2)}px` 
+                })
+            })
         }
     }
 
@@ -87,13 +123,18 @@ export default function Pages() {
         <div className="reco-wrapper">
         {reco ? (
             reco.map((r) => {
-              return(
-                <Link to={`/page/${r._id}`}>
-                    <div className="box-reco">
-                        <p>{r.title}</p>
-                    </div>
-                </Link>
-              )
+                if(r._id != id.id){
+                    return(
+                        <Link to={`/page/${r._id}`}>
+                            <div className="box-reco">
+                                <p>{r.title}</p>
+                            </div>
+                        </Link>
+                    )
+                } else {
+                    return
+                }
+              
             })
             
           ) : (

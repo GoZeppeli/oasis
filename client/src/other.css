@@ -1,0 +1,39 @@
+.buy-me {
+    display: flex;
+    background-color: var(--red-red);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-family: 'generalSans';
+    color: white;
+    margin: 0 auto;
+    transform: scale(0.7);
+}
+
+.buy-me h1 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.buy-me h2 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.donate-text {
+    color: var(--red-bordeaux);
+    font-family: 'generalSans';
+    font-weight: 550;
+    text-align: center;
+    width: 80%;
+    margin: 80px auto 40px auto;
+}
+
+.pending {
+    font-family: 'generalSans';
+    margin: 80px auto;
+    width: fit-content;
+}

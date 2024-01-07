@@ -5,7 +5,7 @@ import Header from "./Header";
 
 
 
-export default function Pages() {
+export default function Protect() {
     const [password, setPassword] = useState('')
     const [display, setDisplay] = useState(false)
 

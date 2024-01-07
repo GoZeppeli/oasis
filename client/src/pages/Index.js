@@ -11,6 +11,7 @@ export default function Index() {
         var prevH1 = document.querySelector('.preview h1')
         var prevIMG = document.querySelector('.preview .img')
         var a = document.createElement("a");
+        a.href = `#/page/${x.link}`
         var span = document.createElement("span");
         var inside = document.createTextNode("lire l'article");
         span.appendChild(inside);
@@ -72,7 +73,7 @@ export default function Index() {
 
     return (
       <>  
-        <Header bottom="350px" right="320px"></Header>
+        <Header bottom="270px" right="320px"></Header>
         <div className="all">
         <div className="intro">
           <p>oasis.media est un site regroupant des essais qui touchent des sujets variés et aussi des livres tombés dans le domaine public. Pour avoir plus d'informations sur le site, rendez vous sur la page à propos. Pour découvrir nos articles, allez sur le menu et cliquez sur la page articles. Enfin pour nous supporter et nous permettre de payer un service d'hébérgement, rendez vous sur la page don. Merci et bonne lecture !</p>

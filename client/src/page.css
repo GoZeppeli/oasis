@@ -9,7 +9,7 @@
 }
 
 .page-title {
-    margin: 70px auto 50px auto;
+    margin: 90px auto 50px auto;
     width: 60%;
     font-family: 'generalSans';
     text-indent: 30px;
@@ -18,7 +18,6 @@
 #display {
     width: 60%;
     margin: 50px auto;
-    font-size: 24px;
     text-align: justify;
 }
 
