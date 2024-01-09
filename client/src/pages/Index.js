@@ -73,10 +73,10 @@ export default function Index() {
 
     return (
       <>  
-        <Header bottom="270px" right="320px"></Header>
+        <Header bottom="340px" right="420px"></Header>
         <div className="all">
         <div className="intro">
-          <p>oasis.media est un site regroupant des essais qui touchent des sujets variés et aussi des livres tombés dans le domaine public. Pour avoir plus d'informations sur le site, rendez vous sur la page à propos. Pour découvrir nos articles, allez sur le menu et cliquez sur la page articles. Enfin pour nous supporter et nous permettre de payer un service d'hébérgement, rendez vous sur la page don. Merci et bonne lecture !</p>
+          <p>Politique, littérature, philosophie, histoire... oasis a l'objectif d'agréger une large palette de thèmes. C'est cela l'idée directrice de cette plateforme : créer un espace de partage de savoir. En plus de permettre aux lecteurs de s'informer sur différents sujets <a href="/#/browse">(voir tous nos articles)</a>, de lui ouvrir des portes de connaissances, oasis espère permettre à chacun de s'exprimer. Autrement dit chacun peut écrire un article sur le sujet qui le passionne de la poésie aux énergies renouvelables en passant par la Seconde Guerre Mondiale. Rendez-vous sur la page <a href="/#/about-us">à propos</a> pour plus d'informations et bonne lecture à tous !  </p>
         </div>
         <div className="headerIndex"><h1>articles récents.</h1></div>
         {isMobile ? (

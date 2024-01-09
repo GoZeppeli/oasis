@@ -38,6 +38,10 @@
     #page-flower {
         margin-top: -16px;
     }
+
+    .credentials-wrapper {
+        transform: scale(0.6);
+    }
   }
 
 .font-size {
@@ -118,7 +122,7 @@ input[type="range"]::-moz-range-track {
 
 .credentials h3 {
     font-family: 'generalSans';
-    border-bottom: solid red 3px;
+    border-bottom: solid var(--red-red) 3px;
 }
 
 .slide-arrow {
@@ -138,7 +142,7 @@ input[type="range"]::-moz-range-track {
 }
 
 .box-reco p {
-    border-bottom: solid red 3px;
+    border-bottom: solid var(--red-red) 3px;
     padding-bottom: 10px;
     color: var(--red-red);
     font-family: 'generalSans';
@@ -161,7 +165,7 @@ input[type="range"]::-moz-range-track {
 .search-bar {
     background: transparent;
     border: transparent;
-    border-bottom: solid 2px red;
+    border-bottom: solid 2px var(--red-red);
     outline: none;
     width: 40vw;
     font-family: 'generalSans';
@@ -179,7 +183,7 @@ input[type="range"]::-moz-range-track {
 }
 
 .box-result p {
-    border-bottom: solid red 3px;
+    border-bottom: solid var(--red-red) 3px;
     padding-bottom: 10px;
     color: var(--red-red);
     font-family: 'generalSans';
@@ -293,8 +297,29 @@ input[type="range"]::-moz-range-track {
     fill: var(--red-red);
 }
 
-.faischier {
-    background-color: red;
-    height: 6000px;
-    width: 100vw;
+span.scroll {
+    color: var(--red-red);
+    vertical-align: super;
+    font-size: 16px;
 }
+
+@media screen and (max-width: 600px) {
+    #display {
+      width: 90%;
+    }
+    .page-title {
+        width: 90%;
+        font-size: 25px;
+    }
+    #page-flower {
+        margin-top: -16px;
+    }
+
+    .credentials-wrapper {
+        transform: scale(0.6);
+        right: 0px;
+    }
+    span.scroll {
+        font-size: 8px;
+    }
+  }

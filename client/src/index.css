@@ -12,6 +12,11 @@
   margin: 0 auto;
 }
 
+.intro a {
+  color: var(--red-bordeaux);
+  text-decoration: underline;
+}
+
 
 .boxten {
   display: inline;

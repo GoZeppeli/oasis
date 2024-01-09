@@ -56,6 +56,7 @@ export default function Pages() {
         var disH1 = [...document.querySelectorAll("#display h1")]
         var disBQ = [...document.querySelectorAll("#display blockquote")]
         var disH2 = [...document.querySelectorAll("#display h2")]
+        var disFOOT = [...document.querySelectorAll("#display span.scroll")]
         var val50 = val - 50
         if(val50 >= 0){
             var addP = val50 * (1/100) * 24 + 24
@@ -106,6 +107,24 @@ export default function Pages() {
                 }
             })
         }
+
+        function scrollinto(x){
+            var number = x.target.innerHTML.replace("[", "").replace("]", "")
+            var foot = document.querySelector(`#foot${number}`)
+            if(foot){
+                foot.scrollIntoView({behavior: 'smooth'})
+            }
+        }
+
+        disFOOT.map((df) => {
+            var base = getComputedStyle(document.querySelector(`#display p`)).fontSize
+            var nopx = base.replace("px", "")
+            if((nopx - 8) >= 8) {
+                df.style.fontSize = `${nopx - 8}px`
+            } else {
+                df.style.fontSize = `${nopx - 2}px`
+            }
+        })
     }
 
 

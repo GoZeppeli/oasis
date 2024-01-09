@@ -2,6 +2,7 @@ import './App.css';
 import './index.css';
 import './page.css';
 import './other.css';
+import './refs.css';
 
 import {
   createHashRouter,
@@ -16,6 +17,8 @@ import Browse from "./pages/Browse";
 import About from "./pages/About";
 import Donate from "./pages/Donate";
 import NotFound from "./pages/NotFound";
+import Test from "./pages/Test";
+import Refs from "./pages/Refs";
 
 
 const router = createHashRouter([
@@ -28,7 +31,9 @@ const router = createHashRouter([
       { path: "/browse", Component: Browse},
       { path: "/about-us", Component: About},
       { path: "/donate", Component: Donate},
-      { path: '*', Component: NotFound }
+      { path: '*', Component: NotFound },
+      { path: '/test', Component: Test },
+      { path: '/references', Component: Refs },
     ]
   }
 ]);

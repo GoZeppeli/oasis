@@ -9,7 +9,7 @@ export default function NotFound() {
 
     return (
       <>
-        <Header  bottom="100px" right="490px"></Header>
+        <Header></Header>
         <h1 className="pending">page inexistante</h1>
       </>
     );

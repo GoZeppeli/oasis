@@ -1,6 +1,6 @@
 :root {
   --red-white : #fff3f0;
-  --red-red : #e72116;
+  --red-red : #bd231b;
   --red-bordeaux : #ce7a7a;
 }
 
@@ -393,4 +393,28 @@ a {
   margin-right: 8px;
   border-radius: 10px;
   animation: 2s linear 0.2s infinite alternate slidein;
+}
+
+.contact-wrapper {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  font-family: 'generalSans';
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transform: scale(1.2);
+}
+
+.contact-svg {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-svg img {
+  height: 18px;
 }

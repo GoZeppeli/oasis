@@ -48,7 +48,7 @@ export default function Browse() {
     const arr = Array.from(Array(limit).keys())
     return (
       <>
-        <Header  bottom="170px" right="420px"></Header>
+        <Header bottom="260px" right="550px"></Header>
         <div className="search-wrapper">
           <input type="text" className="search-bar" placeholder="rechercher un article, un livre..." onChange={() => load()}></input>
         </div>

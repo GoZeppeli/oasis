@@ -9,7 +9,7 @@ export default function About() {
 
     return (
       <>
-        <Header  bottom="100px" right="490px"></Header>
+        <Header  bottom="95px" right="470px"></Header>
         <h4 className="pending">page en rédaction ...</h4>
       </>
     );
