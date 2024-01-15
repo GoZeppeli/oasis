@@ -303,6 +303,18 @@ span.scroll {
     font-size: 16px;
 }
 
+.scrollback {
+    cursor: pointer;
+}
+
+.scroll {
+    cursor: pointer;
+}
+
+.footnote-number {
+    color: var(--red-red);
+}
+
 #refs a {
     color: black;
     border-bottom: 1px solid;

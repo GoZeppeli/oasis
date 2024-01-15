@@ -12,6 +12,7 @@ export default function Pages() {
     const params = parsed.id
 
     function scrollinto(x){
+        console.log(x)
         var number = x.innerHTML.replace("[", "").replace("]", "")
         var foot = document.querySelector(`#foot${number}`)
         if(foot){
@@ -81,7 +82,6 @@ export default function Pages() {
                     scrollinto(s)
                   })
                 })
-            
                 backs.map((b, index) => {
                   var number = index + 1
                   b.id = `foot${number}`
@@ -90,7 +90,7 @@ export default function Pages() {
                     scrollback(b)
                   })
                 })
-              }, 2)
+              }, 200)
         }
     }
 
