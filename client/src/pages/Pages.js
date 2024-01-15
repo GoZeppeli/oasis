@@ -10,6 +10,23 @@ export default function Pages() {
     const string = JSON.stringify(id)
     const parsed = JSON.parse(string)
     const params = parsed.id
+
+    function scrollinto(x){
+        var number = x.innerHTML.replace("[", "").replace("]", "")
+        var foot = document.querySelector(`#foot${number}`)
+        if(foot){
+            foot.scrollIntoView({behavior: 'smooth'})
+        }
+      }
+    
+      function scrollback(x){
+        var number = x.id.replace("foot", "")
+        var note = document.querySelector(`#note${number}`)
+        if(note){
+            note.scrollIntoView({behavior: 'smooth'})
+        }
+      }
+
     async function grab(){
         const response = await fetch(`/api/grabOne/${params}`,
                 {
@@ -53,6 +70,27 @@ export default function Pages() {
         if(article.references){
             document.querySelector("#refs").innerHTML = ""
             document.querySelector('#refs').appendChild(refs.querySelector('div'))
+            setTimeout(()=>{
+                var spans = [...document.querySelectorAll('span.scroll')]
+                var backs = [...document.querySelectorAll('p.scrollback-wrapper')]
+                spans.map((s, index) => {
+                  var number = index + 1
+                  s.id = `note${number}`
+                  s.innerHTML = `[${number}] `
+                  s.addEventListener("click", () => {
+                    scrollinto(s)
+                  })
+                })
+            
+                backs.map((b, index) => {
+                  var number = index + 1
+                  b.id = `foot${number}`
+                  b.firstChild.innerHTML = `[${number}] `
+                  b.querySelector("span.scrollback").addEventListener("click", () => {
+                    scrollback(b)
+                  })
+                })
+              }, 2)
         }
     }
 
@@ -114,13 +152,9 @@ export default function Pages() {
             })
         }
 
-        function scrollinto(x){
-            var number = x.target.innerHTML.replace("[", "").replace("]", "")
-            var foot = document.querySelector(`#foot${number}`)
-            if(foot){
-                foot.scrollIntoView({behavior: 'smooth'})
-            }
-        }
+        
+        
+          
 
         disFOOT.map((df) => {
             var base = getComputedStyle(document.querySelector(`#display p`)).fontSize
