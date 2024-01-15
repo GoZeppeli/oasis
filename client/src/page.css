@@ -303,6 +303,16 @@ span.scroll {
     font-size: 16px;
 }
 
+#refs a {
+    color: black;
+    border-bottom: 1px solid;
+}
+
+#refs {
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
 @media screen and (max-width: 600px) {
     #display {
       width: 90%;
@@ -323,3 +333,5 @@ span.scroll {
         font-size: 8px;
     }
   }
+
+

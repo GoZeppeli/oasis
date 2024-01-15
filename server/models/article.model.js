@@ -6,6 +6,7 @@ const Article = new Schema({
     content: {type: String},
     img: {type: String},
     description: {type: String},
+    references: {type: String},
 });
 
 const ArticleModel = model('Article', Article);
