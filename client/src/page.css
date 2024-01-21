@@ -315,6 +315,19 @@ span.scroll {
     color: var(--red-red);
 }
 
+.page-body figure {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-body img {
+    height: 90%;
+}
+
 #refs a {
     color: black;
     border-bottom: 1px solid;
