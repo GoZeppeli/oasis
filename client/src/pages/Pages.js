@@ -87,9 +87,10 @@ export default function Pages() {
                   var number = index + 1
                   b.id = `foot${number}`
                   b.firstChild.innerHTML = `[${number}] `
-                  b.querySelector("span.scrollback").addEventListener("click", () => {
+                  if(b.querySelector("span.scrollback")){
+                    b.querySelector("span.scrollback").addEventListener("click", () => {
                     scrollback(b)
-                  })
+                    })}
                 })
               }, 200)
         }
