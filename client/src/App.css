@@ -4,6 +4,11 @@
   --red-bordeaux : #ce7a7a;
 }
 
+::selection {
+  color: #fff3f0;
+  background: #ce7a7a;
+}
+
 body {
   margin: 0;
 }

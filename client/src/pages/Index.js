@@ -17,6 +17,7 @@ export default function Index() {
         span.appendChild(inside);
         a.appendChild(span);
         var prevP = document.querySelector('.preview p')
+        var prev = document.querySelector('.preview')
         if(prevH1){
           prevH1.innerHTML = `${x.title}`
         }
@@ -111,11 +112,11 @@ export default function Index() {
             </div>
           )}
           </div> 
-          <div className="preview">
+          <a><div className="preview">
             <div className="img"></div>
             <h1></h1>
-            <p><a><span>lire l'article</span></a></p>
-          </div>
+            <p><span>lire l'article</span></p>
+          </div></a>
           </>
         ) : (
           <>

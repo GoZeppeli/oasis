@@ -157,6 +157,10 @@
   background-color: #ce7a7a70;
   color: var(--red-white);
   z-index: 10;
+  max-width: 45vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .preview span {

@@ -107,7 +107,7 @@ input[type="range"]::-moz-range-track {
     height: 4px;
 }
 
-.credentials {
+.credentials-bottom {
     height: 100px;
     width: 100vw;
     margin-bottom: 70px;
@@ -120,7 +120,17 @@ input[type="range"]::-moz-range-track {
     right: 20%;
 }
 
-.credentials h3 {
+.credentials-bottom h3 {
+    font-family: 'generalSans';
+    border-bottom: solid var(--red-red) 3px;
+}
+
+.credentials-top {
+    height: 100px;
+    width: 100vw;
+}
+
+.credentials-top h3 {
     font-family: 'generalSans';
     border-bottom: solid var(--red-red) 3px;
 }
