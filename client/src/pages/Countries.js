@@ -124,7 +124,6 @@ export default function NotFound() {
                   <></>
                 )
                 }
-                <h3 onClick={() => {scrollinto("II - partis")}}>II - Partis politiques</h3>
               </div>
               <div className="votes I">
                 <h1 className="country-title">Composition des Parlements</h1>
