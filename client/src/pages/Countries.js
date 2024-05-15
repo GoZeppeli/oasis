@@ -33,7 +33,8 @@ export default function NotFound() {
     }, [])
     
     function scrollinto(x){
-      const y = x.split(" ");
+      var w = x.replace('.','');
+      const y = w.split(" ");
       const z = document.querySelector(`.${y[0]}`)
       if(z){
         if(z.classList[0] === "partyCard"){
@@ -165,8 +166,7 @@ export default function NotFound() {
                   <>
                     {article.partis.map((p) => {
                       return(<div className={"partyCard" + " " + p.IDs[0] + " " + p.IDs[1] + " " + p.IDs[2]} onClick={() => {openDisplay(p)}}>
-                        <div className="partyLogo">
-                          <img src={p.logo} alt={p.IDs[0]}></img>
+                        <div className="partyLogo" style={{backgroundImage : `url(${p.logo})`}}>
                         </div>
                         <div className="partyData">
                           <h3>{p.name}</h3>

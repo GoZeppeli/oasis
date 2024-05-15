@@ -305,15 +305,12 @@ p.parti {
     width: 190px;
     margin: 5px auto;
     border-radius: 10px;
-}
-
-.partyLogo img {
-    border-radius: 10px;
-
-}
-
-.partyLogo img{
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .partyData {
@@ -397,8 +394,12 @@ p.parti {
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 25px;
     color: white;
+    text-align: center;
+}
+
+.figure-info h3 {
+    margin: 0;
 }
 
 .figure-card:hover h3 {
@@ -468,11 +469,12 @@ p.parti {
 .party-logo {
     height: 200px;
     width: 200px;
-    margin: 50px 0;
+    margin: 50px 0 20px 0;
 }
 
 .party-logo img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .party-euro {
