@@ -50,6 +50,9 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--red-bordeaux);
 }
 
+
+
+
 .page-body p {
   font-family: 'rowan';
   font-weight: 470;

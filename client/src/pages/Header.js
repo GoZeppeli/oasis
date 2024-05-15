@@ -100,6 +100,7 @@ export default function Headers(props) {
                 <div className="navigation">
                     <Link to={"/"} onClick={() => hideMenu()}><h1 className="ul">ACCUEIL</h1></Link>
                     <Link to={"/browse"} onClick={() => hideMenu()}><h1 className="ul">PARCOURIR</h1></Link>
+                    <Link to={"/maps"} onClick={() => hideMenu()}><h1 className="ul">CARTE</h1></Link>
                     <Link to={"/references"} onClick={() => hideMenu()}><h1 className="ul">REFERENCES</h1></Link>
                     <Link to={"/about-us"} onClick={() => hideMenu()}><h1 className="ul">A PROPOS</h1></Link>
                     <Link to={"/donate"} onClick={() => hideMenu()}><h1 className="ul">DON</h1></Link>

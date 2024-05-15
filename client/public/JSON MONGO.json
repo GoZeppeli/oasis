@@ -1,0 +1,216 @@
+{
+  "_id": {
+    "$oid": "663279950cbe0518c445cf58"
+  },
+  "name": "France",
+  "code": "FR",
+  "data": [
+    "I - Parlement"
+  ],
+  "votes": [
+    {
+      "name": "Sénat",
+      "totalSeats": 348,
+      "composition": [
+        {
+          "name": "CRCE",
+          "position": "far left",
+          "seats": 18,
+          "color": "darkred"
+        },
+        {
+          "name": "EST",
+          "position": "left",
+          "seats": 16,
+          "color": "#67b567"
+        },
+        {
+          "name": "SER",
+          "position": "centre left",
+          "seats": 64,
+          "color": "#f44747"
+        },
+        {
+          "name": "RDSE",
+          "position": "centre left",
+          "seats": 16,
+          "color": "#ed71b2"
+        },
+        {
+          "name": "UC",
+          "position": "centre",
+          "seats": 57,
+          "color": "#f9c618"
+        },
+        {
+          "name": "RDPI",
+          "position": "centre right",
+          "seats": 22,
+          "color": "lightblue"
+        },
+        {
+          "name": "LIRT",
+          "position": "centre right",
+          "seats": 18,
+          "color": "#3758d4"
+        },
+        {
+          "name": "LR",
+          "position": "right",
+          "seats": 133,
+          "color": "darkblue"
+        },
+        {
+          "name": "NA*",
+          "position": "centre left",
+          "seats": 4,
+          "color": "grey"
+        }
+      ]
+    },
+    {
+      "name": "Assemblée Nationale",
+      "totalSeats": 577,
+      "composition": [
+        {
+          "name": "PCF",
+          "position": "far left",
+          "seats": 22,
+          "color": "darkred"
+        },
+        {
+          "name": "LFI",
+          "position": "left",
+          "seats": 75,
+          "color": "purple",
+          "gouvernement": false
+        },
+        {
+          "name": "EELV",
+          "position": "centre left",
+          "seats": 21,
+          "color": "#67b567",
+          "gouvernement": false
+        },
+        {
+          "name": "PS",
+          "position": "centre left",
+          "seats": 31,
+          "color": "#f44747",
+          "gouvernement": false
+        },
+        {
+          "name": "LIOT",
+          "position": "centre",
+          "seats": 22,
+          "color": "#7ecbb1",
+          "gouvernement": false
+        },
+        {
+          "name": "MoDem",
+          "position": "centre",
+          "seats": 50,
+          "color": "orange",
+          "gouvernement": true
+        },
+        {
+          "name": "Ren.",
+          "position": "centre right",
+          "seats": 169,
+          "color": "#29a3e7",
+          "gouvernement": true
+        },
+        {
+          "name": "Hor.",
+          "position": "centre right",
+          "seats": 31,
+          "color": "lightblue",
+          "gouvernement": true
+        },
+        {
+          "name": "LR",
+          "position": "right",
+          "seats": 61,
+          "color": "#3758d4",
+          "gouvernement": false
+        },
+        {
+          "name": "RN",
+          "position": "far right",
+          "seats": 88,
+          "color": "darkblue",
+          "gouvernement": false
+        },
+        {
+          "name": "NI",
+          "position": "",
+          "seats": 7,
+          "color": "grey",
+          "gouvernement": false
+        }
+      ]
+    }
+  ],
+  "partis": [
+    {
+        "name": "Les écologistes",
+        "IDs": ["EELV", "EST"],
+        "logo": "https://i0.wp.com/strategielg.com/wp-content/uploads/2021/10/ISLG-Design-Clients-Strate%CC%81gie-LG-EELV.png?fit=500%2C500&ssl=1",
+        "orientation": "centre gauche",
+        "mainIdeas": "Ecologie",
+        "groupeEuro": "Groupe des Verts",
+        "histoire": "",
+        "figH": [
+            {
+                "name": "René Dumont",
+                "img": "https://www.babelio.com/users/AVT_Rene-Dumont_6761.jpg",
+                "job": "candidat aux présidentielles de 1974, (1904-2001)"
+            }
+        ],
+        "figA": [
+            {
+                "name": "Yannick Jadot",
+                "img": "https://reporterre.net/IMG/logo/arton23424.jpg?1630670789",
+                "job": "sénateur (1967-)"
+            },
+            {
+                "name": "Marine Tondelier",
+                "img": "https://img.lemde.fr/2022/11/29/0/0/1500/1000/1440/960/60/0/fb1ea01_245225-3300183.jpg",
+                "job": "tête de liste aux européennes (1986-)"
+            }
+        ]
+    },
+    {
+        "name": "La France Insoumise",
+        "IDs": ["LFI"],
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Logo_France_Insoumise_-_Cropped.svg/1608px-Logo_France_Insoumise_-_Cropped.svg.png",
+        "orientation": "gauche",
+        "mainIdeas": "Antilibéralisme, écologie, populisme",
+        "groupeEuro": "The Left",
+        "histoire": "",
+        "figH": "",
+        "figA": [
+            {
+                "name": "Jean-Luc Mélenchon",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Meeting_M%C3%A9lenchon_Toulouse_-_2017-04-16_-_Jean-Luc_M%C3%A9lenchon_-_41_%28cropped_2%29.jpg/220px-Meeting_M%C3%A9lenchon_Toulouse_-_2017-04-16_-_Jean-Luc_M%C3%A9lenchon_-_41_%28cropped_2%29.jpg",
+                "job": "fondateur de LFI (1951-)"
+            },
+            {
+                "name": "Manuel Bompard",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Strasbourg_Plenary_November_2019_F70A5712-2_%2849136773007%29_%28cropped%29.jpg/330px-Strasbourg_Plenary_November_2019_F70A5712-2_%2849136773007%29_%28cropped%29.jpg",
+                "job": "député (1986-)"
+            },
+            {
+                "name": "Antoine Léaument",
+                "img": "https://antoineleaument.fr/wp-content/uploads/2023/06/IMG_7008-1v3.jpg",
+                "job": "député (1989-)"
+            },
+            {
+                "name": "Manon Aubry",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Manon_Aubry_%28cropped%29.jpg/330px-Manon_Aubry_%28cropped%29.jpg",
+                "job": "tête de liste aux européennes (1989-)"
+            }
+        ]
+    }
+  ]
+}

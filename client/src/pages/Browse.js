@@ -21,7 +21,7 @@ export default function Browse() {
       setTimeout(()=> {
 
         setArticles(data.content)
-      }, 10000)
+      }, 10)
   }
 
     
@@ -48,7 +48,7 @@ export default function Browse() {
     const arr = Array.from(Array(limit).keys())
     return (
       <>
-        <Header bottom="260px" right="550px"></Header>
+        <Header bottom="360px" right="550px"></Header>
         <div className="search-wrapper">
           <input type="text" className="search-bar" placeholder="rechercher un article, un livre..." onChange={() => load()}></input>
         </div>

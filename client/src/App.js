@@ -19,6 +19,8 @@ import Donate from "./pages/Donate";
 import NotFound from "./pages/NotFound";
 import Test from "./pages/Test";
 import Refs from "./pages/Refs";
+import Maps from "./pages/Maps";
+import Countries from "./pages/Countries";
 
 
 const router = createHashRouter([
@@ -27,6 +29,7 @@ const router = createHashRouter([
     children: [
       { path: "/", Component: Index},
       { path: "/page/:id", Component: Pages},
+      { path: "/countries/:code", Component: Countries},
       { path: "/protect", Component: Protect},
       { path: "/browse", Component: Browse},
       { path: "/about-us", Component: About},
@@ -34,6 +37,7 @@ const router = createHashRouter([
       { path: '*', Component: NotFound },
       { path: '/test', Component: Test },
       { path: '/references', Component: Refs },
+      { path: '/maps', Component: Maps },
     ]
   }
 ]);

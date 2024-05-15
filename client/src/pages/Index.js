@@ -74,7 +74,7 @@ export default function Index() {
 
     return (
       <>  
-        <Header bottom="340px" right="420px"></Header>
+        <Header bottom="440px" right="420px"></Header>
         <div className="all">
         <div className="intro">
           <p>Politique, littérature, philosophie, histoire... oasis a l'objectif d'agréger une large palette de thèmes. C'est cela l'idée directrice de cette plateforme : créer un espace de partage de savoir. En plus de permettre aux lecteurs de s'informer sur différents sujets <a href="/#/browse">(voir tous nos articles)</a>, de lui ouvrir des portes de connaissances, oasis espère permettre à chacun de s'exprimer. Autrement dit chacun peut écrire un article sur le sujet qui le passionne de la poésie aux énergies renouvelables en passant par la Seconde Guerre Mondiale. Rendez-vous sur la page <a href="/#/about-us">à propos</a> pour plus d'informations et bonne lecture à tous !  </p>

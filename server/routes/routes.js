@@ -1,5 +1,5 @@
 const Article = require('../models/article.model')
-const User = require('../models/article.model')
+const Country = require('../models/country.model')
 
 module.exports = function(app) {
     app.get("/api/hi", (req,res) => {
@@ -18,6 +18,17 @@ module.exports = function(app) {
     app.get("/api/grabAll", async (req, res) => {
         let articles = await Article.find({}).sort({_id: -1})
         return res.json({ status: "ok", content : articles });
+    });
+
+    app.get("/api/countries", async (req, res) => {
+        let countries = await Country.find({})
+        return res.json({ status: "ok", content : countries });
+    });
+
+    app.get("/api/onecountry/:code", async (req, res) => {
+        var code = req.params.code;
+        let country = await Country.findOne({code : code})
+        return res.json({ status: "ok", content : country });
     });
 
     app.get("/api/grab10", async (req, res) => {
