@@ -13,6 +13,10 @@ const Controls = () => {
       <button onClick={() => zoomIn()}>Zoomer</button>
       <button onClick={() => zoomOut()}>Dézoomer</button>
       <button onClick={() => resetTransform()}>Restaurer</button>
+      <div className="legend">
+            <div></div>
+            <span>pays fichés</span>
+          </div>
     </div>
   );
 };
@@ -786,13 +790,24 @@ export default function NotFound() {
                 mouse.style.display="none"
                 const country = a.parentElement
                 const allParts = [...country.children]
-                allParts.map((p)=> {
-                    p.style.fillOpacity = "0"
-                    p.style.fill = "var(--red-white)"
+                if(country.id === "FR"){
+                  allParts.map((p)=> {
+                    p.style.fillOpacity = "0.3"
+                    p.style.fill = "var(--red-red)"
                 })
                 clsALT.map((c) => {
+                  c.style.fillOpacity = "0.3"
+              })
+                } else {
+                  allParts.map((p)=> {
+                      p.style.fillOpacity = "0"
+                      p.style.fill = "var(--red-white)"
+                  })
+                  clsALT.map((c) => {
                     c.style.fillOpacity = "1"
                 })
+                }
+                
             })
 
         })
@@ -811,9 +826,11 @@ export default function NotFound() {
         }}></h2>
         </div>
         <div className="map-wrapper">
+          
         <TransformWrapper>
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
             <>
+            
               <Controls />
               <TransformComponent>
               <div className="map">

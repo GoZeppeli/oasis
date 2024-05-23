@@ -197,6 +197,7 @@
     font-family: 'generalsans';
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 100px;
 }
 
 
@@ -383,6 +384,8 @@ p.parti {
     gap: 100px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 70px;
+    padding-top: 20px;
 }
 
 
@@ -396,6 +399,7 @@ p.parti {
     bottom: 0;
     color: white;
     text-align: center;
+    font-size: 13px;
 }
 
 .figure-info h3 {
@@ -415,12 +419,14 @@ p.parti {
 }
 
 .figure-card {
-    width: 300px;
+    width: 200px;
     margin: 0;
-    height: 400px;
+    height: 280px;
+    border-radius: 10px;
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .partyDisplay p {
@@ -479,4 +485,154 @@ p.parti {
 
 .party-euro {
     width: 100%;
+}
+
+.fonctionnement p, .actu p {
+    font-family: 'rowan';
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.head-State {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.state-figure-pic {
+    width: 400px;
+    max-width: 90vw;
+    height: 500px;
+    background-size: cover;
+    background-position: center; 
+    flex-shrink: 0;
+}
+
+.state-figure-data {
+    font-family: 'generalSans';
+}
+
+.state-figure-data h2 span {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--red-red);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .head-State {
+        flex-direction: column;
+    }
+
+}
+
+.minister {
+    border: 3px solid var(--red-red);
+    font-family: 'generalSans';
+    height: 75px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto 75px;
+}
+
+.left-minister {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 30px;
+
+}
+
+.left-minister h2 {
+    margin: 0px;
+}
+
+.left-minister span {
+    margin: 0px;
+    color: var(--red-red);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    text-overflow: ellipsis;
+}
+
+.right-minister {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.minister-logo {
+    width: 80%;
+    border-radius: 10px;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .minister {
+        height: 55px;
+        grid-template-columns: auto 55px;
+    }
+    
+    
+    .left-minister {
+        padding-left: 15px;
+        height: 55px;
+    }
+
+    .left-minister h2 {
+        font-size: 17px;
+        font-weight: 700;
+    }   
+
+    .left-minister span {
+        font-size: 11px;
+    }
+}
+
+#FR * {
+    fill-opacity: 0.3;
+    fill: var(--red-red);
+}
+
+.legend {
+    display: flex;
+    font-family: 'generalSans';
+    gap: 5px;
+}
+
+.legend div {
+    border: 2px solid black;
+    height: 20px;
+    width: 35px;
+    background-color: #bd231b30;
+}
+
+.legend span {
+    font-family: 'generalSans';
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-div {
+    margin-bottom: 100px;
 }
