@@ -80,52 +80,58 @@ export default function NotFound() {
 
     function openDisplay(x){
       const pW = document.querySelector('.partyDisplay-wrapper')
+      const pD = document.querySelector('.partyDisplay')
+      const pC = document.querySelector('.close-display')
       pW.style.display = "flex"
       setTimeout(function(){
         document.querySelector("body").style.overflowY= "hidden"
+        document.querySelector("body").style.marginRight= "0.5em"
+        pW.style.backgroundColor = "rgb(0,0,0, 0.25)"
+        pC.style.top = "45px"
+        pD.style.opacity = "1"
       }, 200);
       pW.querySelector('.party-name').innerHTML = x.name;
-      pW.querySelector('.party-euro').innerHTML = "<b>Groupe politique européen : </b>" + x.groupeEuro;
+      pW.querySelector('.party-euro').innerHTML = x.groupeEuro;
+      pW.querySelector('.bottomEuro p').innerHTML = x.infoEuro;
       pW.querySelector('.party-history').innerHTML = x.histoire;
+      pW.querySelector('.euro-logo').style.backgroundImage = `url(${x.logoEuro})`;
       pW.querySelector('.party-logo img').src = x.logo;
       pW.querySelector('.party-logo img').scrollIntoView({behavior: 'smooth',block: 'center', inline: 'center'})
       pW.querySelector('.party-logo img').alt = x.IDs[0];
 
-      if(x.figH){
-        x.figH.map((fH)=> {
-          const wrapper = document.querySelector(".historical-figures");
+      if(x.fig){
+        x.fig.map((fH)=> {
+          const wrapper = document.querySelector(".important-figures");
           const card = document.createElement('div')
           card.classList.add("figure-card")
-          card.style.backgroundImage = `url(${fH.img})`
-          card.innerHTML = `<div class="figure-info">
-              <h3>${fH.name}</h3>
-              <span>${fH.job}</span>
-            </div>`
-          wrapper.appendChild(card)
-        })
-      }
-      if(x.figA){
-        x.figA.map((fA)=> {
-          const wrapper = document.querySelector(".recent-figures");
-          const card = document.createElement('div')
-          card.classList.add("figure-card")
-          card.style.backgroundImage = `url(${fA.img})`
-          card.innerHTML = `<div class="figure-info">
-              <h3>${fA.name}</h3>
-              <span>${fA.job}</span>
-            </div>`
+          card.innerHTML = `<div class="left-figure">
+          <h2>${fH.name}</h2>
+          <span>${fH.job}</span>
+        </div>
+        <div class="right-figure">
+        <span>${fH.date}</span>
+        </div>
+        <div class="figure-img-wrapper"><div class="figure-img" style='background-image: url(${fH.img})'></div></div>`
+            
           wrapper.appendChild(card)
         })
       }
     }
 
     function closeDisplay(){
-      document.querySelector('.partyDisplay-wrapper').style.display = "none"
+      const pW = document.querySelector('.partyDisplay-wrapper')
       document.querySelector("body").style.overflowY= ""
-      const wrapper1 = document.querySelector(".recent-figures");
-      const wrapper2 = document.querySelector(".historical-figures");
+      document.querySelector("body").style.marginRight= ""
+      const pC = document.querySelector('.close-display')
+      const wrapper1 = document.querySelector(".important-figures");
       wrapper1.innerHTML = ""
-      wrapper2.innerHTML = ""
+      const pD = document.querySelector('.partyDisplay')
+      pW.style.backgroundColor = "rgb(0,0,0,0)"
+        pD.style.opacity = "0"
+        pC.style.top = "-100px"
+      setTimeout(function(){
+        pW.style.display = "none" 
+      }, 300);
     }
 
     return (
@@ -153,7 +159,7 @@ export default function NotFound() {
                 }
               </div>
               
-              
+
                 {article.politics ? (
                   <div className="fonctionnement country-div I">
                     <h1 className="country-title">Régime politique</h1>
@@ -254,20 +260,33 @@ export default function NotFound() {
                           </div>)
                         })}
                         <div className="partyDisplay-wrapper">
-                          <span className="close-display" onClick={() => {closeDisplay()}}>X</span>
+                          <div className="close-display" onClick={() => {closeDisplay()}}>
+                            <h3>fermer</h3>
+                          </div>
                           <div className="partyDisplay">
-                            <div className="party-logo">
-                              <img></img>
+                            <div className="partyHeader">
+                              <div className="party-logo">
+                                <img></img>
+                              </div>
+                              <h1 className="party-name"></h1>
                             </div>
-                            <h1 className="party-name"></h1>
-                            <p className="party-euro"></p>
-                            <b>Histoire :</b><p className="party-history"></p>
-                            <b>Figures importantes dans l'histoire :</b>
-                              <div className="important-figures historical-figures">
+                            <h3>Histoire</h3><p className="party-history"></p>
+                            <h3>Idées principales</h3><p className="party-ideas"></p>
+                            <h3>Union Européenne</h3>
+                            <div className="euroWrapper">
+                              <div className="topEuro">
+                                <p className="party-euro"></p>
+                                <div className="euro-logo"></div>
                               </div>
-                            <b>Figures importantes actuelles :</b>
-                            <div className="important-figures recent-figures">
+                              <div className="bottomEuro">
+                                <p>L'Alliance progressiste des socialistes et démocrates au Parlement européen (S&D) est un groupe politique du Parlement européen annoncé le 12 juin 2009, après les élections européennes de 2009 par Poul Nyrup Rasmussen, le président du Parti socialiste européen (PSE). Il résulte de la volonté d'intégrer le Parti démocrate italien au sein du groupe du PSE et d'éviter ainsi son éparpillement entre deux groupes comme pendant la législature 2004-2009, durant laquelle les élus de l'Olivier faisaient partie soit de l'ADLE pour les anciens députés de la Marguerite, soit du groupe PSE pour les anciens membres des Démocrates de gauche et des Socialistes démocrates italiens. Depuis juillet 2019, il est présidé par Iratxe García.</p>
                               </div>
+                            </div>
+
+                            <h3>Figures importantes</h3>
+                              <div className="important-figures">
+                              </div>
+                              
                           </div>
                         </div>
                       

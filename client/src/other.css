@@ -350,7 +350,8 @@ p.parti {
     top: 0;
     left: 0;
     justify-content: center;
-    align-items: center;
+    overflow-y: scroll;
+    transition: 0.3s;
 }
 
 .partyDisplay {
@@ -362,100 +363,107 @@ p.parti {
     align-items: center;
     font-family: 'generalSans';
     z-index: 10;
-    height: 70vh;
     width: 80vw;
-    overflow-y: scroll;
     display: flex;
-    overflow-x: hidden;
+    margin-top: 400px;
+    transition: 0.3s;
+    height: fit-content;
+    margin-bottom: 200px;
+    opacity: 0;
 }
 
 .partyDisplay h1 {
     font-family: 'generalSans';
 }
 
-.partyDisplay b {
+.partyDisplay h3{
     width: 80%;
-    margin: 20px 0px;
+    margin: 0;
+    margin-top: 20px;
 }
 
 .important-figures {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 70px;
     padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
-.figure-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--red-red);
+.party-history {
+    width: 80%;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.euroWrapper {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: white;
-    text-align: center;
-    font-size: 13px;
 }
 
-.figure-info h3 {
-    margin: 0;
-}
-
-.figure-card:hover h3 {
-    display: none;
-}
-
-.figure-card:hover span {
-    display: block;
-}
-
-.figure-card span {
-    display: none;
-}
-
-.figure-card {
-    width: 200px;
-    margin: 0;
-    height: 280px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.topEuro {
+    display: grid;
+    grid-template-columns: 1fr 170px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 40px;
     overflow: hidden;
 }
 
-.partyDisplay p {
+.topEuro p {
+    width: 100%;
+    text-align: justify;
+}
+
+.topEuro .euro-logo {
+    width: 170px;
+    height: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.bottomEuro {
     width: 80%;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 
-.partyDisplay::-webkit-scrollbar {
+.partyDisplay-wrapper::-webkit-scrollbar {
     width: 0.5em;
 }
 
-.partyDisplay::-webkit-scrollbar-track {
+.partyDisplay-wrapper::-webkit-scrollbar-track {
     background-color: #ce7a7a50;
 }
 
-.partyDisplay::-webkit-scrollbar-thumb {
+.partyDisplay-wrapper::-webkit-scrollbar-thumb {
     background-color: var(--red-bordeaux);
 }
 
 .close-display {
-    position: absolute;
+    position: fixed;
     font-family: 'generalSans';
-    color: var(--red-red);
     font-weight: 700;
-    left: 10vw;
-    top: 15vh;
+    left: 45px;
+    top: -100px;
     z-index: 20;
     cursor: pointer;
+    background-color: var(--red-red);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
 }
+
+.close-display h3 {
+    margin: 0;
+}
+
 
 .allparties {
     display: flex;
@@ -475,13 +483,42 @@ p.parti {
 .party-logo {
     height: 200px;
     width: 200px;
-    margin: 50px 0 20px 0;
 }
 
 .party-logo img {
     width: 100%;
     border-radius: 10px;
 }
+
+.partyHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.partyHeader h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+    .partyHeader {
+       flex-direction: column;
+    }
+
+    .party-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .partyHeader h1 {
+        font-size: 20px;
+    }
+}
+
 
 .party-euro {
     width: 100%;
@@ -635,4 +672,108 @@ p.parti {
 
 .country-div {
     margin-bottom: 100px;
+}
+
+.figure-card {
+    border: 3px solid var(--red-red);
+    font-family: 'generalSans';
+    height: 75px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.left-figure {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.left-figure h2 {
+    margin: 0px;
+}
+
+.left-figure span {
+    margin: 0px;
+    color: var(--red-red);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.right-figure {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.figure-card:hover {
+    height: 500px;
+    background-color: rgba(228, 180, 180, 0.3);
+}
+
+.figure-img-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.figure-img {
+    grid-column: 1/2;
+    height: 400px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .figure-card {
+        height: 55px;
+    }
+    
+    
+    .left-figure {
+        padding-left: 15px;
+        height: 55px;
+    }
+
+    .right-figure {
+        height: 55px;
+    }
+
+
+    .left-figure h2 {
+        font-size: 17px;
+        font-weight: 700;
+    }   
+
+    .left-figure span {
+        font-size: 11px;
+    }
+
+    .topEuro .euro-logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+
+    .topEuro {
+        grid-template-columns: 1fr 70px;
+    }
 }
