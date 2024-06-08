@@ -52,7 +52,7 @@
 }
 
 
-.map path, .map polygon, .map circle {
+.map path, .map polygon, .map circle, .map ellipse {
     stroke:#000;
     stroke-linejoin:round;
     transition: 0.4s ease;
@@ -642,10 +642,7 @@ p.parti {
     }
 }
 
-#FR * {
-    fill-opacity: 0.3;
-    fill: var(--red-red);
-}
+
 
 .legend {
     display: flex;
@@ -776,4 +773,9 @@ p.parti {
     .topEuro {
         grid-template-columns: 1fr 70px;
     }
+}
+
+#FR * {
+    fill-opacity: 0.3;
+    fill: var(--red-red);
 }
