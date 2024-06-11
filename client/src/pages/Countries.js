@@ -94,6 +94,7 @@ export default function NotFound() {
       pW.querySelector('.party-euro').innerHTML = x.groupeEuro;
       pW.querySelector('.bottomEuro p').innerHTML = x.infoEuro;
       pW.querySelector('.party-history').innerHTML = x.histoire;
+      pW.querySelector('.party-ideas').innerHTML = x.ideas;
       pW.querySelector('.euro-logo').style.backgroundImage = `url(${x.logoEuro})`;
       pW.querySelector('.party-logo img').src = x.logo;
       pW.querySelector('.party-logo img').scrollIntoView({behavior: 'smooth',block: 'center', inline: 'center'})
@@ -279,7 +280,7 @@ export default function NotFound() {
                                 <div className="euro-logo"></div>
                               </div>
                               <div className="bottomEuro">
-                                <p>L'Alliance progressiste des socialistes et démocrates au Parlement européen (S&D) est un groupe politique du Parlement européen annoncé le 12 juin 2009, après les élections européennes de 2009 par Poul Nyrup Rasmussen, le président du Parti socialiste européen (PSE). Il résulte de la volonté d'intégrer le Parti démocrate italien au sein du groupe du PSE et d'éviter ainsi son éparpillement entre deux groupes comme pendant la législature 2004-2009, durant laquelle les élus de l'Olivier faisaient partie soit de l'ADLE pour les anciens députés de la Marguerite, soit du groupe PSE pour les anciens membres des Démocrates de gauche et des Socialistes démocrates italiens. Depuis juillet 2019, il est présidé par Iratxe García.</p>
+                                <p></p>
                               </div>
                             </div>
 

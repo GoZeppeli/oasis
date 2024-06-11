@@ -390,7 +390,7 @@ p.parti {
 }
 
 
-.party-history {
+.party-history, .party-ideas {
     width: 80%;
     text-align: justify;
     margin-top: 5px;
@@ -425,6 +425,8 @@ p.parti {
     background-size: contain;
     border-radius: 10px;
 }
+
+
 
 .bottomEuro {
     width: 80%;
@@ -764,18 +766,20 @@ p.parti {
         font-size: 11px;
     }
 
-    .topEuro .euro-logo {
-        width: 70px;
-        height: 70px;
-        border-radius: 5px;
-    }
 
-    .topEuro {
-        grid-template-columns: 1fr 70px;
-    }
 }
 
 #FR * {
     fill-opacity: 0.3;
     fill: var(--red-red);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .topEuro {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+
 }
