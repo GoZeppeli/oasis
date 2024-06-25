@@ -3,9 +3,19 @@
   "name": "oasis.media",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/img/flower.svg",
-      "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
-      "type": "image/x-icon"
+      "src": "/img/flower.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/img/flower.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/flower.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
