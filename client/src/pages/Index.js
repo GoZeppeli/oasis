@@ -2,11 +2,14 @@ import { createElement, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import {isMobile} from 'react-device-detect';
+import { useOutletContext } from "react-router-dom";
+
 
 export default function Index() {
     const [articles, setArticles] = useState(null);
+    const { allarticles, allcountries } = useOutletContext();
+    console.log(allarticles)
     var doc = ""
-    window.scrollTo(0, 0)
     function preview(x) {
         var prevH1 = document.querySelector('.preview h1')
         var prevIMG = document.querySelector('.preview .img')
@@ -30,22 +33,15 @@ export default function Index() {
         }
     }
 
-    async function grab(){
-      const response = await fetch(`/api/grab10`,
-                {
-                method: "GET",
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                }
-      );
-      const data = await response.json()
-      preview({title : data.content[0].title, img: data.content[0].img, link : data.content[0]._id, description: data.content[0].description})
-      setArticles(data.content)
-    }
-    useEffect( () => {
-      grab()
-    }, [])
+    useEffect(() => {
+      console.log("hey")
+      if(allarticles){
+        console.log("bro")
+        const r = [...allarticles].reverse()
+        setArticles(r.slice(0,10))
+        preview({title : r[0].title, img: r[0].img, link : r[0]._id.$oid, description: r[0].description})
+      }
+    }, [allarticles])
 
     
     function clickLeft() {
@@ -95,7 +91,7 @@ export default function Index() {
             articles.map((a, index) => {
               return(
                 <div>
-              <div className="boxten" id={index} onClick={() => preview({title : a.title,img: a.img, link: a._id, description : a.description})}>
+              <div className="boxten" id={index} onClick={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
                 <span>{index + 1}.</span>
                 <p id={index} >{a.title}</p>
               </div>
@@ -132,8 +128,8 @@ export default function Index() {
           {articles ? (
             articles.map((a, index) => {
               return(
-              <Link to={`/page/${a._id}`}>
-              <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id, description : a.description})}>
+              <Link to={`/page/${a._id.$oid}`}>
+              <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
                 <span>{index + 1}.</span>
                 <p id={index} >{a.title}</p>
               </div>

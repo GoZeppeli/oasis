@@ -200,7 +200,9 @@
     margin-bottom: 100px;
 }
 
-
+.table-of-contents h3 {
+    cursor: pointer;
+}
 
 
 .votes {

@@ -91,3 +91,17 @@
 #minus {
     display: none;
 }
+
+.return {
+    color: var(--red-red);
+    font-family: 'generalSans';
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.return:hover  {
+    margin-left: 15px;
+}

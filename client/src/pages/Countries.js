@@ -3,34 +3,19 @@ import {useParams} from "react-router-dom";
 import Admin from "./Admin";
 import Header from "./Header";
 import Dot from "./Dot";
+import { useOutletContext } from "react-router-dom";
 
 
-
-export default function NotFound() {
+export default function Countries() {
+    const { allarticles, allcountries } = useOutletContext();
     let id = useParams()
     const [article, setArticle] = useState(null);
-    async function graball(){
-      const response = await fetch(`/api/onecountry/${id.code}`,
-              {
-                method: "GET",
-                headers: {
-                  'Content-Type': 'application/json',
-                }
-              }
-          );
-      const data = await response.json()
-      console.log()
-      setTimeout(()=> {
 
-        setArticle(data.content)
-        
-      }, 10)
-  }
-
-    
     useEffect(() => {
-      graball()
-    }, [])
+      if(allcountries){
+        setArticle(allcountries.filter(item => item.alpha2Code === `${id.code}`)[0])
+      }
+    })
 
     var pol= ""
     var comm=""
@@ -138,6 +123,9 @@ export default function NotFound() {
     return (
       <>
         <Header></Header>
+        <div className="return" onClick={() => {window.location.replace(
+        window.location.origin + '/#/maps',
+        );}}><span>←</span> Retourner sur la carte</div>
         <div className="country">
           {article ? (
             <>
@@ -145,7 +133,7 @@ export default function NotFound() {
                 <div className="flag">
                   <img src={window.location.origin + '/img/flags/' + id.code.toLowerCase() + ".png"} alt="diewelt"></img>
                 </div>
-              <h1>{article.name}</h1>
+              <h1>{article.translations.fr}</h1>
             </div>
               <div className="table-of-contents">
                 {article.data ? (
