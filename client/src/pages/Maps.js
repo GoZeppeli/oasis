@@ -55,7 +55,9 @@ export default function NotFound() {
       a.addEventListener("mouseenter", function () {
         const country = a.parentElement
         const mouse = document.querySelector('.countryName')
-        mouse.style.display = "block"
+        if(mouse){
+          mouse.style.display = "block"
+        }
         countries.map((b) => {
           if (b.alpha2Code === country.id) {
             mouse.innerHTML = `${b.translations.fr}`
@@ -75,7 +77,9 @@ export default function NotFound() {
       })
       a.addEventListener("mouseleave", function () {
         const mouse = document.querySelector('.countryName')
-        mouse.style.display = "none"
+        if(mouse){
+          mouse.style.display = "none"
+        }
         const country = a.parentElement
         const allParts = [...country.children]
         if (country.id === "FR") {

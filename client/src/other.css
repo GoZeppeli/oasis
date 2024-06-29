@@ -198,6 +198,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .table-of-contents h3 {

@@ -7,6 +7,7 @@ import { useOutletContext } from "react-router-dom";
 
 export default function Index() {
     const [articles, setArticles] = useState(null);
+    const [count, setCount] = useState(0);
     const { allarticles, allcountries } = useOutletContext();
     console.log(allarticles)
     var doc = ""
@@ -64,6 +65,43 @@ export default function Index() {
 			});
 		}
 
+    function slideRight() {
+      const r = [...allarticles].reverse()
+      
+      if(count === 6) {
+
+      } else {
+        setCount(count + 1)
+        preview({title : r[count + 1].title, img: r[count + 1].img, link : r[count + 1]._id.$oid, description: r[count + 1].description})
+      }
+    }
+
+    function slideLeft() {
+      const r = [...allarticles].reverse()
+
+      if(count === 0) {
+
+      } else {
+        setCount(count - 1)
+        preview({title : r[count - 1].title, img: r[count - 1].img, link : r[count - 1]._id.$oid, description: r[count - 1].description})
+
+      }
+    }
+
+    useEffect(() => {
+      if(isMobile){
+        if(count === 0){
+        document.querySelector('#leftArrow').classList.add('greyArrow')
+      } else if(count === 6){
+        document.querySelector('#rightArrow').classList.add('greyArrow')
+      } else {
+        document.querySelector('#rightArrow').classList.remove('greyArrow')
+        document.querySelector('#leftArrow').classList.remove('greyArrow')
+      }
+      }
+      
+    }, [count])
+
     const arrI = Array.from(Array(10).keys())
     
 
@@ -80,33 +118,13 @@ export default function Index() {
           <>
             <div className="lasttenarticles" >
             <div className="slide">
-              <div id="leftArrow" onClick={() => {clickLeft()}}>
+              <div id="leftArrow" onClick={() => {slideLeft()}}>
                 <svg className="LR-arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g id="_7-Arrow_Up" data-name="7-Arrow Up"><path d="M3.41,2H16V0H1A1,1,0,0,0,0,1V17H2V3.41L30.29,31.71l1.41-1.41Z"/></g></svg>
               </div>
-              <div id="rightArrow" onClick={() => {clickRight()}}>
+              <div id="rightArrow" onClick={() => {slideRight()}}>
                 <svg className="LR-arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g id="_7-Arrow_Up" data-name="7-Arrow Up"><path d="M3.41,2H16V0H1A1,1,0,0,0,0,1V17H2V3.41L30.29,31.71l1.41-1.41Z"/></g></svg>
               </div>
             </div>
-          {articles ? (
-            articles.map((a, index) => {
-              return(
-                <div>
-              <div className="boxten" id={index} onClick={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
-                <span>{index + 1}.</span>
-                <p id={index} >{a.title}</p>
-              </div>
-              </div>
-              )
-            })
-            
-          ) : (
-            <div className="grey-index">
-              <div className="boxten">
-                <span>1.</span>
-                <p>vive sankara !</p>
-              </div>
-            </div>
-          )}
           </div> 
           <a><div className="preview">
             <div className="img"></div>
