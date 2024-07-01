@@ -6289,10 +6289,24 @@
                 "logo": "https://imgur.com/UTkqjVq.png",
                 "orientation": "extrême gauche",
                 "mainIdeas": "Communisme",
-                "groupeEuro": "Comme le PCF n'atteint pas les 5% nécéssaires pour avoir des élus au Parlement Européen, on ne peut savoir leur groupe parlementaire même si on peut imaginer qu'ils sont soit indépendants soit membres de The Left. Etant donné que ce parti est annoncé sous la barre des 5%, ses idées ne seront pas détaillées ici.",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/0Xt8kcY.png",
-                "histoire": "",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "18",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "22",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Maurice Thorez",
@@ -6332,10 +6346,24 @@
                 "logo": "https://imgur.com/4T2CDy0.png",
                 "orientation": "gauche",
                 "mainIdeas": "Antilibéralisme, écologie, populisme",
-                "groupeEuro": "The Left",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/0Xt8kcY.png",
-                "histoire": "",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "0",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "75",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "9",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Jean-Luc Mélenchon",
@@ -6376,10 +6404,24 @@
                 "logo": "https://imgur.com/dK7Flnn.png",
                 "orientation": "centre gauche",
                 "mainIdeas": "Ecologie",
-                "groupeEuro": "Groupe des Verts",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/lUDwGxG.png",
-                "histoire": "",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "16",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "21",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "5",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "René Dumont",
@@ -6413,12 +6455,25 @@
                 ],
                 "logo": "https://imgur.com/CeDhpnB.png",
                 "orientation": "centre gauche",
-                "logoEuro": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/S%26D.svg/langfr-1280px-S%26D.svg.png",
+                "notes": "<div class='notes-content'><h4>De la SFIO de Blum, au PS de Faure</h4><p> Fondé en 1905, la SFIO (Section Française de l’Internationale Ouvrière) est le deuxième parti politique français. Né de la Deuxième Internationale, ses idées suivent les principes établis par les socialistes utopiques (Saint-Simon, Fourier, Cabet, Leroux) puis par Marx et Engels. Mais les principes de l’internationalisme et du pacifisme portés jusqu’alors par le mouvement ouvrier et la IIe Internationale sont remis en question par l’adhésion de la SFIO à la politique d’union sacrée lors de la Première Guerre Mondiale. Ainsi, la durée de la guerre, les sacrifices et désillusions qu’elle entraîne, vont faire germer une opposition. En 1917, la révolution russe accentue une poussée à gauche dans le parti. Les oppositions s’accentuent au sein du parti, de plus la SFIO et la gauche en général, essuient un large échec électoral en 1919 avec une majorité à droite de la chambre des députés (on parle même de chambre bleu horizon). Cette situation mène finalement à une scission en 1920 lors du congrès de Tours : le Parti Communiste (SFIC-PCF) nait de cette scission. Tout de même, le parti maintient de bon score électoraux, il devient même un parti influent de la coalition majoritaire  de 1946 à 1926, le cartel des gauches. Le parti regroupe aussi bien des réformistes que des révolutionnaires et gagnent en adhérent à la suite de la stalinisation du PCF. </p><p>Face à la montée du fascisme dans les années 1930, la SFIO et la gauche de manière générale craint l’arrivée de l’extrême droite au pouvoir. En effet, en réaction à la journée d'émeutes menée le 6 février 1934 par des ligues de droite et d’extrême droite, la SFIO, le Parti Radical, le PCF, syndicats et associations de gauche se réunissent dans une coalition politique : le Front Populaire. Même s’il existe de nombreux différences idéologiques, le Front Populaire se fonde autour d’une idée de défense face au fascisme montant. La coalition remporte la majorité à la chambre des députés et peut mettre en place une politique prolétarienne qui rencontre tout de même des échecs face à l’influence du patronat. Le gouvernement dirigé par Léon Blum, porté par une grande vague de grèves populaires, réalise à travers les accords Matignon un large ensemble de réformes sociales (augmentation des salaires, conventions collectives, congés payés, semaine de 40 heures). Cependant le Front Populaire se divise autour de la question de l’intervention dans la guerre d’Espagne. La SFIO se divise peu à peu et cela est accentué par l’entrée en guerre de la France face à l’Allemagne Nazie puis l’occupation sous Vichy. En effet, une partie de la SFIO soutiennent Pétain lors du vote pour l’obtention des pleins pouvoirs comme Laval mais une autre partie s’engage dans la résistance et conteste le pouvoir de Pétain comme Blum qui vote contre les pleins pouvoirs et finit par être emprisonné lors des procès de Riom. </p><p>La guerre finit, la SFIO met en place une épuration pour s’éloigner des membres qui ont collaboré sous l’occupation. Mais à la suite de la guerre, le PCF connait une énorme succès dans les urnes qui permet même au parti de dépasser la SFIO pour la première fois. A la suite de ce succès des communistes et sous la IVème, la SFIO connait des multiples revers électoraux notamment lors de la guerre d’Algérie et des mouvements de mai 68. En 1969 est fondé le Parti Socialiste lors du congrès d’Alfortville et qui intègre la SFIO et d’autres partis de gauche quelques mois plus tard lors du congrès d’Issy-les-Moulineaux. Mais c’est bien le congrès d’Epinay en 1971 qui marque l’étape fondatrice du parti. En effet, s’ajoute au PS le CIR de Mitterrand qui devient le premier secrétaire du parti. Lors des élections suivantes aussi bien présidentielles qui législatives, les partis de gauche s’allient et le PS parvient finalement à redépasser le PCF. Tout de même la gauche échoue encore et encore aux présidentielle. C’est finalement en 1981 que Mitterrand parvient au pouvoir. Même si le PS domine largement la gauche de l’époque, quelques communistes sont nommés au gouvernement du premier ministre Pierre Mauroy. Cependant le gouvernement adopte une politique de rigueur économique pour maitriser l’inflation, Lionel Jospin (successeur de Mitterrand en tant que secrétaire général du parti) parle de “parenthèse libérale”. En 1984, Laurent Fabius remplace Pierre Mauroy et les communistes refusent de réintégrer le gouvernement. Certains intellectuels français analysent l’attitude de ce gouvernement, pour Louis Janover et Jean-Pierre Garnier le PS serait une deuxième droite. Ainsi le PS est de plus en plus critiqué pour son rapprochement avec les thèses libérales notamment en 1992 où les socialistes défendent le traité de Maastricht. </p><p>A la suite des deux mandats de Mitterrand, le PS ne parvient plus à réussir aux présidentielles malgré de bons scores aux législatives grâce à différentes coalitions comme la gauche plurielle avec le PCF et les Verts. L’échec de Jospin aux présidentielles de 2002 puis de Ségolène Royal en 2007 provoque des tensions au sein du PS puisque une partie minoritaire se détache du parti en dénonçant le social-libéralisme de celui-ci comme Jean-Luc Mélenchon. Même si Francois Hollande parvient à renverser la tendance en 2012 en remportant les présidentielles face à Sarkozy, son mandat marque plutôt la mort du PS. Le parti conclut sa tendance lorsque Valls est nommé premier ministre et finalement Hollande est de moins en moins apprécié en France. A l’issu de son quinquennat, le PS se désagrège fortement avec de nombreux élus qui partent vers le nouveau parti d’Emmanuel Macron, La République en Marche, qui est l’incarnation la plus forte de ce social-libéralisme. EN 2017, Hamon remporte les primaires mais n’obtient que 6% des voix aux présidentielles. Depuis le PS n’avance que de défaite en défaite n’obtenant même pas 2% aux présidentielles de 2022 (moins que le PCF, une première depuis l’ère Mitterrand). Avec l’échec de la NUPES sous Olivier Faure qui fragmente encore plus le parti, le PS cherche à se relancer lors des Européennes en s’allient avec Place Publique de Raphaël Glucksmann.</p><p>Le parti ne comptait en effet que 5 sièges au Parlement Européen. Pour les élections de 2024, le PS et Place Publique se sont à nouveau alliés pour créer la liste “Réveiller l’Europe” avec comme tête de liste Glucksmann comme en 2019. La liste gagne énormément en popularité dans les sondages : de 6ème avec 7% des scrutins en 2019, la liste socialiste est annoncé comme la troisième force du pays avec 15% des intentions de vote. Même si les sondages pouvaient laisser penser à une victoire du PS sur la liste macroniste, le PS reste derrière mais obtient tout de même un gros score en obtenant 13 sièges. Même si le parti suit la ligne classique des partis socialistes européens, on peut trouver une différence dans les priorités. Alors que pour le PSE, la sécurité et la défense apparaissent à la fin du programme, ces sujets apparaissent tout en haut du programme français. Aide budgétaire pour l’Ukraine (et intégration du pays dans l’UE), réarmement massif du continent, cyberdéfense, pour Glucksmann l’ambition est claire, il faut “donner à l’Europe les moyens de se défendre”. Cette subtilité entre parti national et européen peut être lié à la personnalité de Glucksmann qui a appelé à passer en « économie de guerre » en faveur de l’effort de guerre ukrainien.</p><h4>Un glissement idéologique</h4><p>Le PS a profondément changé d’idéologie au cours de son histoire. Fondé sur la doctrine marxiste révolutionnaire à ses origines, le parti a tourné depuis les années 90 vers le social-libéralisme. En effet, il renonce dans sa déclaration des principes à employer les mots “révolutionnaire” ou “lutte des classe” alors qu’utilisés dans les anciennes déclarations. Le parti ne semble même plus être réformiste (c’est à dire vouloir faire tomber le capitalisme par des réformes) mais il cherche plutôt à le réguler tout en conservant les marchés capitalistes privés et le libre marché. Pour le chercheur en science politique, Thibaut Rioufreyt, la politique du PS est chimérique puisque d’une part elle cherche à nationaliser certains secteurs et d’autre part elle suit le modèle de la social-démocratie scandinave favorable au libre marché et à l’Union Européenne. Ainsi comme d’autres partis socialistes en Europe, le PS a laissé tombé la doctrine marxiste au profit d’une logique progressiste et écologique. Pro-européen, le parti soutient l’intégration de nouveau pays dans l’Union comme l’Ukraine qu’il soutient fortement. Le parti cherche à défendre les intérêts des minorités et le droit des femmes. Sur les questions migratoires, le parti s’oppose à toute idée de “menace d’un grand remplacement” qualifié par le parti de peur irrationnelle. Il défend l’accueil des immigrés et leur inclusion par le travail. Même si le parti met en avant la défense des travailleurs dans son programme (il défend l’idée d’un écart maximum de salaire de 1 à 20 dans les entreprises par exemple), cela ne semble plus être une priorité. Le PS a notamment subis de violentes manifestations en 2016 après la loi Travail El-Khomri qui facilité les licenciements. En effet, le parti semble avoir perdu le vote des classes travailleuses. Pour Remi Lefebvre, professeur de sciences politique, “le PS est devenu un parti de bobos, de diplômés, d’urbains, de fonctionnaires ouverts sur la mondialisation”. Finalement sur le plan de l’écologie, le parti suit plutôt les idées d’EELV en supportant les énergies renouvelables. Tout de même, la position du parti sur le nucléaire est beaucoup moins clair puisque ce sujet n’est même pas évoqué dans leur programme.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "64",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "31",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "13",
+                        "total" : "81"
+                    }
+                ],
                 "mainIdeas": "Progressisme, social-démocratie",
-                "ideas": "Le PS a profondément changé d’idéologie au cours de son histoire. Fondé sur la doctrine marxiste révolutionnaire à ses origines, le parti a tourné depuis les années 90 vers le social-libéralisme. En effet, il renonce dans sa déclaration des principes à employer les mots “révolutionnaire” ou “lutte des classe” alors qu’utilisés dans les anciennes déclarations. Le parti ne semble même plus être réformiste (c’est à dire vouloir faire tomber le capitalisme par des réformes) mais il cherche plutôt à le réguler tout en conservant les marchés capitalistes privés et le libre marché. Pour le chercheur en science politique, Thibaut Rioufreyt, la politique du PS est chimérique puisque d’une part elle cherche à nationaliser certains secteurs et d’autre part elle suit le modèle de la social-démocratie scandinave favorable au libre marché et à l’Union Européenne. Ainsi comme d’autres partis socialistes en Europe, le PS a laissé tombé la doctrine marxiste au profit d’une logique progressiste et écologique. Pro-européen, le parti soutient l’intégration de nouveau pays dans l’Union comme l’Ukraine qu’il soutient fortement. Le parti cherche à défendre les intérêts des minorités et le droit des femmes. Sur les questions migratoires, le parti s’oppose à toute idée de “menace d’un grand remplacement” qualifié par le parti de peur irrationnelle. Il défend l’accueil des immigrés et leur inclusion par le travail. Même si le parti met en avant la défense des travailleurs dans son programme (il défend l’idée d’un écart maximum de salaire de 1 à 20 dans les entreprises par exemple), cela ne semble plus être une priorité. Le PS a notamment subis de violentes manifestations en 2016 après la loi Travail El-Khomri qui facilité les licenciements. En effet, le parti semble avoir perdu le vote des classes travailleuses. Pour Remi Lefebvre, professeur de sciences politique, “le PS est devenu un parti de bobos, de diplômés, d’urbains, de fonctionnaires ouverts sur la mondialisation”. Finalement sur le plan de l’écologie, le parti suit plutôt les idées d’EELV en supportant les énergies renouvelables. Tout de même, la position du parti sur le nucléaire est beaucoup moins clair puisque ce sujet n’est même pas évoqué dans leur programme.",
-                "infoEuro": "Le Parti Socialiste français s’inscrit dans ces objectifs. Mené par Glucksmann, la liste socialiste française cherche à améliorer son score. Le PS allié à Place Publique comptait en effet seulement 5 sièges au Parlement Européen. Pour les élections de 2024, le PS et Place Publique se sont à nouveau alliés pour créer la liste “Réveiller l’Europe” avec comme tête de liste Glucksmann comme en 2019. La liste gagne énormément en popularité dans les sondages : de 6ème avec 7% des scrutins en 2019, la liste socialiste est annoncé comme la troisième force du pays avec 15% des intentions de vote. Même si les sondages pouvaient laisser penser à une victoire du PS sur la liste macroniste, le PS reste derrière mais obtient tout de même un gros score en obtenant 13 sièges. Même si le parti suit la ligne classique des partis socialistes européens, on peut trouver une différence dans les priorités. Alors que pour le PSE, la sécurité et la défense apparaissent à la fin du programme, ces sujets apparaissent tout en haut du programme français. Aide budgétaire pour l’Ukraine (et intégration du pays dans l’UE), réarmement massif du continent, cyberdéfense, pour Glucksmann l’ambition est claire, il faut “donner à l’Europe les moyens de se défendre”. Cette subtilité entre parti national et européen peut être lié à la personnalité de Glucksmann qui a appelé à passer en « économie de guerre » en faveur de l’effort de guerre ukrainien.",
-                "groupeEuro": "L’Alliance progressiste des socialistes et démocrates au Parlement européen (S&D) est né d’une alliance entre le Parti Socialiste Européen (PSE) et le Parti Démocrate italien en 2009. Première force au Parlement jusque 1999, le PSE, puis S&D, est aujourd’hui le deuxième groupe majoritaire du Parlement européen derrière le Parti Populaire Européen. Classé au centre-gauche, le groupe comprend exclusivement des partis sociaux-démocrates et progressistes avec comme partis les plus importants le PSOE (Parti socialiste ouvrier espagnol) et le SPD (Sozialdemokratische Partei Deutschlands). Les volontés du groupe sont des positions classiques de sociaux-démocrates et sont détaillés dans le programme de la force principale de S&D, le Parti Socialiste Européen. De manière générale, le groupe cherche à protéger le droit des travailleurs et des syndicats. Le commissaire européen socialiste Nicolas Schmit martela, en effet, dans un meeting du PSE : “On se battra pour des emplois de qualité”. De plus, le groupe se bat aussi pour décarboner la croissance en favorisant les énergies vertes, défendre une justice sociale en protégeant les droits des minorités et en protégeant les immigrés arrivant en Europe. ",
-                "histoire": "Fondée en 1905, la SFIO (Section Française de l’Internationale Ouvrière) est le deuxième parti politique français. Né de la Deuxième Internationale, ses idées suivent les principes établis par les socialistes utopiques (Saint-Simon, Fourier, Cabet, Leroux) puis par Marx et Engels. Mais les principes de l’internationalisme et du pacifisme portés jusqu’alors par le mouvement ouvrier et la IIe Internationale sont remis en question par l’adhésion de la SFIO à la politique d’union sacrée lors de la Première Guerre Mondiale. Ainsi, la durée de la guerre, les sacrifices et désillusions qu’elle entraîne, vont faire germer une opposition. En 1917, la révolution russe accentue une poussée à gauche dans le parti. Les oppositions s’accentuent au sein du parti, de plus la SFIO et la gauche en général, essuient un large échec électoral en 1919 avec une majorité à droite de la chambre des députés (on parle même de chambre bleu horizon). Cette situation mène finalement à une scission en 1920 lors du congrès de Tours : le Parti Communiste (SFIC-PCF) naît de cette scission. Tout de même, le parti maintient de bon score électoraux, il devient même un parti influent de la coalition majoritaire  de 1946 à 1926, le cartel des gauches. Le parti regroupe aussi bien des réformistes que des révolutionnaires et gagnent en adhérent à la suite de la stalinisation du PCF.<br></br>Face à la montée du fascisme dans les années 1930, la SFIO et la gauche de manière générale craint l’arrivée de l’extrême droite au pouvoir. En effet, en réaction à la journée d'émeutes menée le 6 février 1934 par des ligues de droite et d’extrême droite, la SFIO, le Parti Radical, le PCF, syndicats et associations de gauche se réunissent dans une coalition politique : le Front Populaire. Même s’il existe de nombreuses différences idéologiques, le Front Populaire se fonde autour d’une idée de défense face au fascisme montant. La coalition remporte la majorité à la chambre des députés et peut mettre en place une politique prolétarienne qui rencontre tout de même des échecs face à l’influence du patronat. Le gouvernement dirigé par Léon Blum, porté par une grande vague de grèves populaires, réalise à travers les accords Matignon un large ensemble de réformes sociales (augmentation des salaires, conventions collectives, congés payés, semaine de 40 heures). Cependant le Front Populaire se divise autour de la question de l’intervention dans la guerre d’Espagne. La SFIO se divise peu à peu et cela est accentué par l’entrée en guerre de la France face à l’Allemagne Nazie puis l’occupation sous Vichy. En effet, une partie de la SFIO soutient Pétain lors du vote pour l’obtention des pleins pouvoirs comme Laval mais une autre partie s’engage dans la résistance et conteste le pouvoir de Pétain comme Blum qui vote contre les pleins pouvoirs et finit par être emprisonné lors des procès de Riom.<br></br>La guerre finit, la SFIO met en place une épuration pour s’éloigner des membres qui ont collaboré sous l’occupation. Mais à la suite de la guerre, le PCF connait une énorme succès dans les urnes qui permet même au parti de dépasser la SFIO pour la première fois. A la suite de ce succès des communistes et sous la IVème, la SFIO connait des multiples revers électoraux notamment lors de la guerre d’Algérie et des mouvements de mai 68. En 1969 est fondé le Parti Socialiste lors du congrès d’Alfortville et qui intègre la SFIO et d’autres partis de gauche quelques mois plus tard lors du congrès d’Issy-les-Moulineaux. Mais c’est bien le congrès d’Epinay en 1971 qui marque l’étape fondatrice du parti. En effet, s’ajoute au PS le CIR de Mitterrand qui devient le premier secrétaire du parti. Lors des élctions suivantes aussi bien présidentielles qui législatives, les partis de gauche s’allient et le PS parvient finalement à redépasser le PCF. Tout de même la gauche échoue encore et encore aux présidentielles. C’est finalement en 1981 que Mitterrand parvient au pouvoir. Même si le PS domine largement la gauche de l’époque, quelques communistes sont nommés au gouvernement du premier ministre Pierre Mauroy. Cependant le gouvernement adopte une politique de rigueur économique pour maitriser l’inflation, Lionel Jospin (successeur de Mitterrand en tant que secrétaire général du parti) parle de “parenthèse libérale”. En 1984, Laurent Fabius remplace Pierre Mauroy et les communistes refusent de réintégrer le gouvernement. Certains intellectuels français analysent l’attitude de ce gouvernement, pour Louis Janover et Jean-Pierre Garnier le PS serait une deuxième droite. Ainsi le PS est de plus en plus critiqué pour son rapprochement avec les thèses libérales notamment en 1992 où les socialistes défendent le traité de Maastricht.<br></br>A la suite des deux mandats de Mitterrand, le PS ne parvient plus à réussir aux présidentielles malgré de bons scores aux législatives grâce à différentes coalitions comme la gauche plurielle avec le PCF et les Verts. L’échec de Jospin aux présidentielles de 2002 puis de Ségolène Royal en 2007 provoque des tensions au sein du PS puisqu'une partie minoritaire se détache du parti en dénonçant le social-libéralisme de celui-ci comme Jean-Luc Mélenchon. Même si Francois Hollande parvient à renverser la tendance en 2012 en remportant les présidentielles face à Sarkozy, son mandat marque plutôt la mort du PS. Le parti conclut sa tendance lorsque Valls est nommé premier ministre et finalement Hollande est de moins en moins apprécié en France. A l’issu de son quinquennat, le PS se désagrège fortement avec de nombreux élus qui partent vers le nouveau parti d’Emmanuel Macron, La République en Marche, qui est l’incarnation la plus forte de ce social-libéralisme. EN 2017, Hamon remporte les primaires mais n’obtient que 6% des voix aux présidentielles. Depuis le PS n’avance que de défaite en défaite n’obtenant même pas 2% aux présidentielles de 2022 (moins que le PCF, une première depuis l’ère Mitterrand). Avec l’échec de la NUPES sous Olivier Faure qui fragmente encore plus le parti, le PS cherche à se relancer lors des Européennes en s’allient avec Place Publique de Raphaël Glucksmann.",
                 "fig": [
                     {
                         "name": "François Mitterand",
@@ -6450,11 +6505,25 @@
                 ],
                 "logo": "https://imgur.com/mpx92ij.png",
                 "orientation": "centre",
+                "notes": "<div class='notes-content'><p>Après des négociations entre autonomistes corses et d’autres non-inscrits du Parlement, le groupe LIOT est formé en 2018. Au début, il se qualifie comme minoritaire (ni dans l’opposition, ni dans la majorité au pouvoir) mais en 2019, le parti finit par rejoindre l’opposition après avoir voté contre au vote de confiance du gouvernement Castex. Cette opposition à la majorité présidentiel continu jusqu’en 2023 où le groupe dépose une motion de censure à l’encontre du gouvernement Borne (à cause des multiples 49.3) qui échoue à 9 voix seulement. Tout de même, il vote généralement comme la majorité Ensemble !</p><p>Il est difficile de saisir les positions du parti puisqu’il ne se définit pas par une idéologie. Il est surtout une associations de députés non-inscrits qui souhaite profiter des avantages d’un parti (temps de parole, budget). Macronistes, indépendantistes corses, centristes, radicaux de gauche, républcains de droite s’unissent dans ce petit parti. Il est donc difficile d’assigner d’idées principales à ce groupe qui est plus un groupe technique, utilitaire, qu’un vrai groupe politique uni.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "0",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "22",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "81"
+                    }
+                ],
                 "mainIdeas": "Centrisme, indépendantisme corse",
-                "groupeEuro": "Ce parti ne semble pas défendre une liste européenne propre mais plutôt se disperser dans d'autres listes, souvent petites.",
-                "infoEuro": "",
-                "logoEuro": "",
-                "histoire": "",
                 "fig": [
                     {
                         "name": "Charles de Courson",
@@ -6474,6 +6543,24 @@
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/MoDem_logo_2019_-_Cropped.svg/2068px-MoDem_logo_2019_-_Cropped.svg.png",
                 "orientation": "centre",
                 "mainIdeas": "Centrisme, libéralisme, démocratie chrétienne",
+                "notes": "<div class='notes-content'><p>L’Union pour la Démocratie Française nait en 1978 sous l’impulsion de Valérie Giscard D’Estaing. Pour Laurent de Boissieu, le parti nait pour s’opposer à la récente création du RPR de Chirac. L’UDF regroupe les centristes et des modérés de droite. Même si le parti s’allie souvent avec la droite, il garde sa ligne centriste. Sous l’impulsion de François Bayrou, le parti se distance de plus en plus de le droite en quittant par exemple le PPE dans le parlement européen.</p><p>Après le succès de Bayrou dans les urnes en 2007 (19% des voix), le parti annonce devenir le Mouvement Démocrate (MoDem). Le parti cherche absolument à rester libre et refuse le choix entre gauche et droite. Ainsi, lors des élections municipales de 2008, le parti présente des listes indépendantes, alliées avec le droite ou alliées avec la gauche. Naviguant entre alliance avec la droite et la gauche, le parti est souvent qualifié d’opportuniste et il est surtout sujet à d’énormes dissensions internes qui s’aggravent lors d’échecs dans les urnes comme en 2010. Tout de même, depuis 2017, le MoDem semble avoir trouvé un ancrage fort avec La République En Marche. Les deux partis s’allient fréquemment et font aujourd’hui parti de la coalition Ensemble!. Même si le parti semble minoritaire, il parvient à obtenir différents postes du cabinet comme par exemple, Marc Fesneau, Ministre de l'Agriculture et de la Souveraineté alimentaire. Le MoDem pour les élections européennes s’est allié avec la liste macroniste Besoin d’Europe mené par Valérie Hayer qui remporte 13 sièges à l’issue des élections de 2024. Sur ces 13 eurodéputés, 4 viennent du MoDem.</p><p>Il est difficile de saisir les positions du parti puisqu’il est particulièrement fluide. De manière générale, il se fonde sur des valeurs humanistes, de libéralisme et d’europhilie. Le parti est un grand soutien de la politique d’Emmanuel Macron donc les idées des deux partis se rejoignent fortement. Il s’intéresse surtout aux questions de démocratie en cherchant à inclure plus de représentativité dans les institutions. Dès ses origines, le flou idéologique était pointé du doigt par les journalistes. Pour d’autres, il n’y a pas de ligne du parti, Bayrou fait cavalier seul et 'La ligne du modem, c’est celle de Bayrou' (Jean-François Kahn). Pour avoir une idée vague, le parti s’ancre dans la lignée de la démocratie chrétienne qui défend à la fois des valeurs sociales (fraternité par exemple) et l’économie de marché. Il tangue donc entre la social-démocratie de gauche et le libéralisme économique de droite.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "57",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "50",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "81"
+                    }
+                ],
                 "groupeEuro": "Renew Europe",
                 "infoEuro": "",
                 "logoEuro": "https://imgur.com/KqX4DMG.png",
@@ -6504,10 +6591,24 @@
                 "logo": "https://imgur.com/yDoGQ7q.png",
                 "orientation": "centre droit",
                 "mainIdeas": "Centrisme, libéralisme",
-                "groupeEuro": "Renew Europe",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/KqX4DMG.png",
-                "histoire": "",
+                "notes": "<div class='notes-content'><p>La République en Marche (ou En Marche!) est créé en 2016 par Emmanuel Macron et ses soutiens en vue d’une candidature de celui-ci aux élections présidentielles de 2017. Ce qui étonnant c’est que ce parti ne se fonde pas sur une idée commune mais autour d’une personnalité : Macron. Plus anormale que cela, le parti revendique se libérer de tous les clivages politiques en étant “ni de droite, ni de gauche”. Ainsi, il mène la campagne pour se hisser en tête à tête face à Marine Le Pen au second tour des présidentielles, qu’il rempote avec plus de 60% des voix exprimées. Attrape-tout, le parti a réussi à se hisser comme un parti nouveau, qui brise la traditionnelle bipolarité PS-LR. En grattant à la fois des adhérents du PS, de LR, de l’UDI et en s’associant avec le MoDem, le parti obtient la majorité absolue aux élections législatives de 2017. 42 % des candidats La République en marche viennent de la société civile, ce sont notamment des profiles d’experts qui sont recrutés depuis le privé. </p><p>Dès ses origines, le parti a donc montré qu’il réussissait à capter aussi bien la gauche que la droite. En effet, il se compose de personnalités de gauche comme Clément Beaune ou Gabriel Attal que de personnalités de droite comme Bruno Le Maire ou Rachida Dati. A la fois progressiste, libéral, mondialiste et europhile, La Croix écrit que le parti ambitionne de rassembler largement, depuis les sociaux-démocrates jusqu'aux gaullistes sociaux. Pour d’autres politologues, le parti macroniste est plus un parti entreprise, c’est un parti très vertical et la politique macroniste soutient énormément les grandes firms, le président parle de la “start up nation”. Il est d’ailleurs parfois décrit comme le “président des riches”. Tout de même, le positionnement idéologique de Macron qui semblait plutôt être social-libéral, semble s’être droitisé depuis quelques années, notamment lors de son second mandat (développé dans le commentaire sur l’actualité). </p><p>Le parti change d’ailleurs de nom à ce moment là en devenant Renaissance. Tout de même, le parti perd en puissance à cause de l’impopularité des différentes réformes et n’obtient qu’une majorité relative.</p><p>Les européennes apparaissent comme un défi pour la liste Besoin d’Europe mené par Renaissance. Extrêmement europhile, le parti soutient de nouvelles intégrations européennes comme celle de l’Ukraine et l’Europe de la défense avec des stratégies militaires communes. Il soutient et porte souvent des projets d’accords de libre-échange comme avec la Nouvelle-Zélande mais se différencie des autres partis plus libéraux du groupe en insistant sur une certaine intervention de l’Etat que le parti a pu mettre en lumière lors de la crise du COVID avec son soutien au plan de relance européen. Il cherche aussi à faire changer les institutions européennes en faisant passer le Conseil de l’UE à un vote à la majorité plutôt qu’à l’unanimité.</p><p>L’impopularité continu de croitre notamment après l’échec des européennes de 2024 puisque celui-ci est largement devancé par Bardella et est même rattrapé par la liste socialiste.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "22",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "169",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "13",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Emmanuel Macron",
@@ -6534,10 +6635,24 @@
                 "logo": "https://imgur.com/8Gsd1id.png",
                 "orientation": "centre droit",
                 "mainIdeas": "Conservatisme, libéralisme",
-                "groupeEuro": "Renew Europe",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/KqX4DMG.png",
-                "histoire": "",
+                "notes": "<div class='notes-content'><p>Edouard Philipe, maire du Havre et ancien premier ministre (très populaire dans les sondages), fonde son propre en parti en 2021 au Havre : Horizons. Même si Edouard Philippe a toujours soutenu Macron notamment aux présidentielles de 2022, sa ligne politique diffère légèrement en étant plus à droite que Macron. </p><p>Par exemple, Horizons pour les élections européennes s’est allié avec la liste macroniste *Besoin d’Europe* mené par Valérie Hayer qui remporte 13 sièges à l’issue des élections de 2024. Sur ces 13 eurodéputés, 2 viennent d’Horizons. </p><p>Comme le parti n’a jamais tenu de campagnes de manière indépendante, il est difficile de déterminer les réelles idées du parti. Tout de même, on peut savoir qu’Horizons représente l’aile de droite de la coalition Ensemble ! et est bien plus proche des idéaux gaullistes. Leur manifeste met en avant l’ordre et les valeurs de la République comme vecteur de liberté. Et dans ses discours, Edouard Philippe reprend certaines logiques de droite comme la critique du *wokisme* ou la vision de la justice comme étant le maillon faible de l’ordre. Par ailleurs, on retrouve aussi la matrice libérale puisque le parti prône dès les premières phrase la liberté d’entreprendre. C’est donc un parti qui se rapproche des Républicains en étant tout de même beaucoup moins dur sur l’immigration et les thèmes de sécurité. </p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "18",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "31",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Edouard Philippe",
@@ -6556,10 +6671,24 @@
                 "logo": "https://imgur.com/SiClCbo.png",
                 "orientation": "droite",
                 "mainIdeas": "Conservatisme, gaullisme",
-                "groupeEuro": "Parti Populaire Européen - PPE",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/xEpsCtz.png",
-                "histoire": "",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "133",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "61",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "6",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Nicolas Sarkozy",
@@ -6613,10 +6742,24 @@
                 "logo": "https://i.la-croix.com/729x486/smart/2018/06/02/1200943879/Logo-Rassemblement-national-reprenant-flamme-Front-national_0.jpg",
                 "orientation": "extrême droite",
                 "mainIdeas": "Conservatisme, nationalisme, euroscepticisme",
-                "groupeEuro": "Identité et démocratie - ID",
-                "infoEuro": "",
-                "logoEuro": "https://imgur.com/zQE7uFu.png",
-                "histoire": "",
+                "notes": "<div class='notes-content'><p>Fondé en 1972, par Jean-Marie Le Pen, des anciens Waffen-SS, des sympathisants néonazis et des nostalgiques de l'Algérie française membres de l’OAS, une organisation terroriste, le Front National a du mal à avancer dans les urnes jusque dans les années 1980, quand le FN gagne 10 élus aux européennes. Depuis, le FN avance dans les urnes notamment sous la présidence de Jean-Marie Le Pen, celui-ci dépasse les 15% aux présidentielles de 1995. Tout de même, le parti est affaibli en 1998 avec la scission du Mouvement National. Ce nouveau parti mené par Bruno Mégret a emmené avec lui quelques milliers d’adhérents et des cadres du parti. Cette scission annoncait pour certains journalistes la fin de l’ère Le Pen au FN pourtant il parvient à passer au second tour des présidentielles en 2002, une première pour l’extrême droite en France. </p><p>Le parti continu à progresser mais l’image de Jean-Marie Le Pen fait tâche pour certains à cause de ses propos antisémites passés et empêcherait au parti d’avancer plus loin dans les urnes. La tête du parti est donc laissé à sa fille, Marine Le Pen en 2011. Une stratégie de “normalisation” / ”dédiabolisation” s’engage donc sous Marine Le Pen pour faire oublier le passé antisémite et nazi du parti.</p><p>Cette stratégie réussit au parti puisqu’il parvient à se hisser en 2017 et 2022 au second tour des présidentielles et il obtient respectivement 23% et 33% aux européennes de 2019 et 2024.</p><p>Le parti se fonde sur un principe simple : le rejet de l’immigration. Derrière ce projet se trouve une volonté de créer une unité raciale française (c’est pourquoi le parti s’oppose aux langues régionales et cultures régionales, qui font pourtant parti de la culture française). Volonté qui s’exprime dès le texte fondateur du parti, “Défendre les français”. En réalité le discours anti-immigration s’est développé au cours du temps pour des raisons électoralistes puisque pour certains cadre du parti “l'immigration constitue un thème de propagande exceptionnel dans les milieux travailleurs”. (Il faut aussi noter que pour certains cadres, adopter un discours anti-immigration permettrait dans un second temps d’expliquer que les juifs sont le “vrai problème”.) Faisant donc de l’immigration, la racine de nombreux des problèmes sociétaux (insécurité, violences faites aux femmes, …), le parti prône la préférence nationale. Cette préférence est ce qui est à la racine du caractère “extrême” du parti puisqu’il cherche à opposer différentes catégories de citoyens : il y aurait des “vrais” français (dits “de souche”) et des “faux” français. Cela se retrouve dans les propositions du parti autour des binationaux, ceux-ci seraient des citoyens français moins fiable. Ainsi, le parti cherche à financer son programme en retirant de nombreux droits aux immigrés arrivés en France comme l’AME. </p><p>Autre que l’immigration, les autres idées du parti semblent changeantes. Le parti revient fréquemment sur des positions historiques : Frexit, retour de la peine de mort, pro-Palestine, anti-OTAN… Tout de même, certaines lignes semblent se poursuivre comme le rejet des politiques environnementales. Longtemps climatosceptique, le parti s’oppose plutôt aux mesures environnementales dites “contraignantes” comme l’installation d’éoliennes ou l’interdiction du glyphosate.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "0",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "88",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "30",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Jean-Marie Le Pen",
@@ -6635,11 +6778,24 @@
                 "logo": "https://imgur.com/npcLkW4.jpg",
                 "orientation": "extrême droite",
                 "mainIdeas": "Nationalisme, euroscepticisme",
-                "groupeEuro": "Même si le parti annonçait rejoindre le groupe ECR, cela ne semble plus être d’actualité. Avec l’implosion du parti et l’exclusion de 4 de ses 5 eurodéputés (qui eux se rapprochent d’ECR), la seule eurodéputé du parti, Sarah Knafo, est annoncé proche d’un nouveau groupe européen. En effet, après l’exclusion de l’AfD (parti d’extrême droite allemand) du groupe ID par Marine Le Pen, le parti allemand cherche à former une nouveau groupe d’extrême droite en Europe (le troisième !). Ce groupe s’appellerait selon certaines rumeurs, “les souverainistes” et permettrait d’allier les partis de droite les plus radicaux d’Europe dont Reconquête. Rien ne permet d’en savoir plus à part que ces partis se rejoignent sur une idée : l’euroscpepticisme. Ils lutteront donc contre toutes nouvelles intégration européenne.",
-                "infoEuro": "Leur programme annonce dès l’introduction leur volonté : “Défendre la civilisation, c’est bien sûr préserver l’Europe européenne aux racines helléno-chrétienne face à l’immigration et à l’islamisation”. Le parti reprend la rhétorique du grand remplacement de Renaud Camus en parlant de “conquête islamique”. Il s’oppose donc à l’immigration en proposant de “supprimer toute subvention aux ONG pro-migrants”, de quitter la Cour Européenne des droits de l’homme jugé archaïque et de mettre en place un blocus militaire naval en Méditerranée. Le parti s’oppose aux mesures de protections de l’environnement en parlant même de “fanatisme écologique” et d’extrémise vert. Il s’oppose au fanatisme woke et à la “propagande LGBT” qui censurerait le peuple européen. Le parti adopte donc une position classique de l’extrême droite en Europe et qui ressemble aux positions du parti républicain américain qui craint lui aussi la propagande LGBT.",
-                "logoEuro": "https://imgur.com/j1Ljy73.png",
-                "ideas": "La base idéologique de Reconquête est l’identitarisme en épousant totalement la pensée complotiste de Renaud Camus du grand remplacement. La racine du parti est en effet de lutter contre “l’effacement” de la France et il est écrit plus loin dans le programme “Notre peuple a le droit de continuer à exister. Notre peuple a le droit de protéger son identité. […] Faire que la France reste la France”. Cette base identitaire justifie donc une politique sévère face à l’immigration : suppression de l’AME, expulsion des fichés S étrangers et summum de cette politique, Reconquête souhaite “créer un ministère de la Remigration doté de tous les moyens matériels nécessaires, notamment des avions, pour mettre en œuvre cette nouvelle politique migratoire”. Cette politique sécuritaire s’accompagne d’une volonté d’armer tous les policiers municipaux pour “amener la paix”. De manière général, le parti vante les mérites du peuple français comme un tout unique et homogène face à une prétendue invasion étrangère, à la propagande LGBT et au fanatisme écologique. Ce discours se rapproche parfois du racisme, en effet, Eric Zemmour est condamné à différentes reprises pour provocation à la haine, injure homophobe et raciste, provocation à la haine religieuse envers les musulmans et diffamation.",
-                "histoire": "Alors qu’Eric Zemmour laisse planer le doute sur une possible candidature aux élections présidentielles, une association, Les amis d’Eric Zemmour, est lancé pour le soutenir. Cette association permet la création du parti Reconquête le 5 décembre 2021 lorsque Zemmour réalise un des ses premiers meetings après l’annonce de sa candidature. Il parvient à rassembler autour de lui différentes personnalités de la droite issues de LR comme Guillaume Pelletier ou du RN comme Gilbert Collard. Même s’il n’obtient que 7% des voix aux présidentielles, il parvient à devancer LR et le PS. Tout de même, la popularité de son parti diminue lors des législatives puisqu’aucun candidats de Reconquête, même pas lui, ne parvient à se qualifier au second tour. Le parti obtient finalement ses premiers élus lors des élections européennes avec Marion Maréchal Le Pen comme tête de liste et cherche à en obtenir dans l’Assemblée Nationale après sa dissolution. Cependant il perd 4 de ses 5 élus à l’issu des exclusions mené par Eric Zemmour. Celui-ci a exclu de nombreux membres du parti qui souhaitait s’allier au RN pour les élections législatives de 2024.",
+                "notes": "<div class='notes-content'><p>Alors qu’Eric Zemmour laisse planer le doute sur une possible candidature aux élections présidentielles, une association, *Les amis d’Eric Zemmour*, est lancé pour le soutenir. Cette association permet la création du parti Reconquête le 5 décembre 2021 lorsque Zemmour réalise un des ses premiers meetings après l’annonce de sa candidature. Il parvient à rassembler autour de lui différentes personnalités de la droite issues de LR comme Guillaume Pelletier ou du RN comme Gilbert Collard. Même s’il n’obtient que 7% des voix aux présidentielles, il parvient à devancer LR et le PS. Tout de même, la popularité de son parti diminue lors des législatives puisqu’aucun candidats de Reconquête, même pas lui, ne parvient à se qualifier au second tour. Le parti obtient finalement ses premiers élus lors des élections européennes avec Marion Maréchal Le Pen comme tête de liste.</p><p>Le programme de cette campagne européenne réussie annonce dès l’introduction la volonté du parti : “Défendre la civilisation, c’est bien sûr préserver l’Europe européenne aux racines helléno-chrétienne face à l’immigration et à l’islamisation”. Le parti reprend la rhétorique du grand remplacement de Renaud Camus en parlant de “conquête islamique”. Il s’oppose donc à l’immigration en proposant de “supprimer toute subvention aux ONG pro-migrants”, de quitter la Cour Européenne des droits de l’homme jugé archaïque et de mettre en place un blocus militaire naval en Méditerranée. Le parti s’oppose aux mesures de protections de l’environnement en parlant même de “fanatisme écologique” et d’extrémise vert. Il s’oppose au fanatisme woke et à la “propagande LGBT” qui censurerait le peuple européen. Le parti adopte donc une position classique de l’extrême droite en Europe et qui ressemble aux positions du parti républicain américain qui craint lui aussi la propagande LGBT.</p><p>Cependant il perd 4 de ses 5 élus à l’issu des exclusions mené par Eric Zemmour. Celui-ci a exclu de nombreux membres du parti qui souhaitait s’allier au RN pour les élections législatives de 2024. Même si le parti annonçait rejoindre le groupe ECR, cela n’est donc plus d’actualité. Avec l’implosion du parti et l’exclusion de 4 de ses 5 eurodéputés (qui eux se rapprochent d’ECR), la seule eurodéputé du parti, Sarah Knafo, est annoncé proche d’un nouveau groupe européen. En effet, après l’exclusion de l’AfD (parti d’extrême droite allemand) du groupe ID par Marine Le Pen, le parti allemand cherche à former une nouveau groupe d’extrême droite en Europe (le troisième !). Ce groupe s’appellerait selon certaines rumeurs, “les souverainistes” et permettrait d’allier les partis de droite les plus radicaux d’Europe dont Reconquête. Rien ne permet d’en savoir plus à part que ces partis se rejoignent sur une idée : l’euroscpepticisme. Ils lutteront donc contre toutes nouvelles intégration européenne.</p><p>La base idéologique de Reconquête est l’identitarisme en épousant totalement la pensée complotiste de Renaud Camus du grand remplacement. La racine du parti est en effet de lutter contre “l’effacement” de la France et il est écrit plus loin dans le programme “Notre peuple a le droit de continuer à exister. Notre peuple a le droit de protéger son identité. […] Faire que la France reste la France”. Cette base identitaire justifie donc une politique sévère face à l’immigration : suppression de l’AME, expulsion des fichés S étrangers et summum de cette politique, Reconquête souhaite “créer un ministère de la Remigration doté de tous les moyens matériels nécessaires, notamment des avions, pour mettre en œuvre cette nouvelle politique migratoire”. Cette politique sécuritaire s’accompagne d’une volonté d’armer tous les policiers municipaux pour “amener la paix”. De manière général, le parti vante les mérites du peuple français comme un tout unique et homogène face à une prétendue invasion étrangère, à la propagande LGBT et au fanatisme écologique. Ce discours se rapproche parfois du racisme, en effet, Eric Zemmour est condamné à différentes reprises pour provocation à la haine, injure homophobe et raciste, provocation à la haine religieuse envers les musulmans et diffamation.</p></div>",
+                "seats": [
+                    {
+                        "name" : "Sénat",
+                        "seats" : "0",
+                        "total" : "348"
+                    },
+                    {
+                        "name" : "Assemblée Nationale",
+                        "seats" : "0",
+                        "total" : "577"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "1",
+                        "total" : "81"
+                    }
+                ],
                 "fig": [
                     {
                         "name": "Eric Zemmour",
