@@ -1,0 +1,239 @@
+[
+    {
+        "data": [
+            "I - Exécutif actuel",
+            "II - Parlement",
+            "III - Partis politiques"
+        ],
+        "votes": [
+            {
+                "name": "Senato della Repubblica",
+                "totalSeats": 200,
+                "composition": [
+                    {
+                        "name": "SI",
+                        "seats": "",
+                        "color": "darkred"
+                    }
+                ]
+            },
+            {
+                "name": "Assemblée Nationale",
+                "totalSeats": 577,
+                "composition": [
+                    {
+                        "name": "PCF",
+                        "position": "far left",
+                        "seats": 22,
+                        "color": "darkred"
+                    }
+                ]
+            }
+        ],
+        "partis": [
+            {
+                "name": "Sinistra Italiana",
+                "IDs": [
+                    "SI"
+                ],
+                "logo": "https://imgur.com/C70PizS.png",
+                "orientation": "gauche",
+                "mainIdeas": "social-démocratie",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "3",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "4",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "2",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Nicola Fratoianni",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nicola_Fratoianni_Quirinale_2022_%28cropped%29.jpg/800px-Nicola_Fratoianni_Quirinale_2022_%28cropped%29.jpg",
+                        "job": "député et secrétaire du parti",
+                        "date": "1972-",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Europa Verde",
+                "IDs": [
+                    "EV"
+                ],
+                "logo": "https://imgur.com/HaACkI9.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "écologie, progressisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "1",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "6",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "4",
+                        "total" : "76"
+                    }
+                ]
+            },
+            {
+                "name": "Movimento 5 Stelle",
+                "IDs": [
+                    "M5S"
+                ],
+                "logo": "https://imgur.com/3lYxUou.png",
+                "orientation": "attrape-tout",
+                "mainIdeas": "populisme, antisystème, syncrétisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "28",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "52",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "8",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Beppe Grillo",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Beppe_Grillo_3.jpg/330px-Beppe_Grillo_3.jpg",
+                        "job": "humoriste, co-fondateur du parti",
+                        "date": "1948-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Gianroberto Casaleggio",
+                        "img": "https://media-assets.wired.it/photos/615c4c6c1b0ff3843e30f1bd/master/w_1600%2Cc_limit/wired_placeholder_dummy.png",
+                        "job": "co-fondateur du parti",
+                        "date": "1954-2016",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Partito Democratico",
+                "IDs": [
+                    "PD"
+                ],
+                "logo": "https://imgur.com/GMamp0w.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "social-libéralisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "40",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "69",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "21",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Matteo Renzi",
+                        "img": "https://www.euractiv.fr/wp-content/uploads/sites/3/2014/07/matteo_renzi_addresses_the_european_parliament._strasbourg_2_july._european_parliamentflickr.jpg.jpeg",
+                        "job": "président du conseil des ministres (2014-2016), sénateur, secrétaire du parti",
+                        "date": "1975-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Enrico Letta",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Enrico_Letta_in_2024.jpg/330px-Enrico_Letta_in_2024.jpg",
+                        "job": "président du conseil des ministres (2013-2014), secrétaire du parti (2021-2023)",
+                        "date": "1966-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Elly Schlein",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Enrico_Letta_in_2024.jpg/330px-Enrico_Letta_in_2024.jpg",
+                        "job": "eurodéputée, députée, secrétaire du parti (2023-)",
+                        "date": "1985-",
+                        "info": ""
+                    }
+                ]
+            }
+        ],
+        "politics": "<div class='fct'></div>",
+        "executif": {
+            "head": [
+                {
+                    "name": "Sergio Mattarella",
+                    "img": "https://www.quirinale.it/allegati_statici/fr-biografia/foto_uff_pdr_b.jpg",
+                    "dates": "Mandat : 2015-2022, 2022-2029",
+                    "job": "président de la République",
+                    "oldJobs": "Juge à la Cour constitutionnelle, ministre de la Défense et de l’Education, député",
+                    "birth": "1941",
+                    "pol": "Indépendant (lié à PD auparavant)",
+                    "polShort": "PD"
+                },
+                {
+                    "name": "Giorgia Meloni",
+                    "img": "https://img.lemde.fr/2024/07/02/0/0/6000/4000/1440/960/60/0/03539b5_2024-07-02t173818z-595980059-rc2th8asl3tp-rtrmadp-3-italy-meloni.JPG",
+                    "dates": "depuis le 22 octobre 2022",
+                    "job": "présidente du conseil des ministres",
+                    "oldJobs": "Députée, ministre de la Jeunesse sous Silvio Berlusconi, présidente des Frères d’Italie",
+                    "birth": "1977",
+                    "pol": "Frères d’Italie (Fratelli d’Italia, FdL)",
+                    "polShort": "FdL"
+                }
+            ],
+            "ministers": [
+                {
+                    "name": "Antonio Tajani",
+                    "job": "Vice-président du Conseil des ministres, Ministre des Affaires étrangères (secrétaire de Forz Italia)",
+                    "logo": "https://imgur.com/3T3IZP3.png"
+                },{
+                    "name": "Matteo Salvini",
+                    "job": "Vice-président du Conseil des ministres, ministre des Infrastructures et de la Mobilité durable (secrétaire de Lega)",
+                    "logo": "https://imgur.com/xqEkFFc.png"
+                },
+                {
+                    "name": "Giancarlo Giorgetti",
+                    "job": "Ministre de l'Économie et des Finances",
+                    "logo": "https://imgur.com/xqEkFFc.png"
+                },
+                {
+                    "name": "Carlo Nordio",
+                    "job": "Ministre de la Justice",
+                    "logo": "https://imgur.com/2E3YwCa.png"
+                }
+            ]
+        },
+        "actu": "<div class='comm'></div>"
+    }
+]

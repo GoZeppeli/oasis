@@ -384,7 +384,7 @@ p.parti {
     font-family: 'generalSans';
 }
 
-.partyDisplay h2, .partyDisplay h3{
+.partyDisplay h2{
     width: 80%;
     margin: 0;
     margin-top: 20px;
@@ -498,6 +498,45 @@ p.parti {
 .party-logo img {
     width: 100%;
     border-radius: 10px;
+}
+
+.euro-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.euro-logo img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ue-card {
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.ue-card img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.euro {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.euro-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
 }
 
 .partyHeader {
@@ -775,7 +814,7 @@ p.parti {
 
 }
 
-#FR * {
+#FR *, #IT *  {
     fill-opacity: 0.3;
     fill: var(--red-red);
 }

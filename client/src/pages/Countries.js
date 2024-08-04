@@ -1,56 +1,80 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import Admin from "./Admin";
 import Header from "./Header";
 import Dot from "./Dot";
 import { useOutletContext } from "react-router-dom";
 import { isMobile } from "react-device-detect";
-
+import { findFlagUrlByIso2Code } from "country-flags-svg";
 
 
 export default function Countries() {
-  const { allarticles, allcountries } = useOutletContext();
+
+  const navigate = useNavigate();
+
+  const { allarticles, allcountries, alleurope, allmaps } = useOutletContext();
   let id = useParams()
   const [article, setArticle] = useState(null);
+  const [europe, setEurope] = useState(null);
   const [map, setMap] = useState(null);
+
+  function scrollinto(x) {
+    var w = x.replace('.', '');
+    const y = w.split(" ");
+    const z = document.querySelector(`.${y[0]}`)
+    if (z) {
+      if (z.classList[0] === "partyCard") {
+        z.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
+        z.classList.add('card-scroll')
+        setTimeout(() => {
+
+          z.classList.remove('card-scroll')
+
+        }, 1000)
+      } else {
+        z.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
 
   useEffect(() => {
     if (allcountries) {
-      setArticle(allcountries.filter(item => item.alpha2Code === `${id.code}`)[0])
+      setArticle(allcountries.filter(item => item.alpha2Code === id.code)[0])
     }
 
-    if(article) {
-      fetch('data/map.json'
-      ,{
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }
-      }
-      )
-        .then(function(response){
-          return response.json();
-        })
-        .then(function(myJson) {
-          const ms = myJson.filter(item => item.country === article.name)[0]
-          if(ms){
-            setMap(ms.svg);
-          }
-        });
+    if (alleurope) {
+      setEurope(alleurope)
     }
-    
+
+    if(allmaps){
+      if(allmaps.some(item => item.country === id.code)){
+        setMap(allmaps.filter(item => item.country === id.code)[0].svg)
+      } else {
+        setMap(null)
+      }
+    }
+
   })
   var mapSVG = ""
-  if(map) {
+  if (map) {
     mapSVG = new DOMParser().parseFromString(map, "text/html")
 
     setTimeout(() => {
       if (document.querySelector(".mapsvgs")) {
 
       } else {
-        document.querySelector(".map-svg-wrapper").appendChild(mapSVG.querySelector('.mapsvgs'))
+        if(document.querySelector(".map-svg-wrapper")){
+
+          document.querySelector(".map-svg-wrapper").appendChild(mapSVG.querySelector('.mapsvgs'))
+        }
       }
     }, 10)
+  } else {
+
+      if(document.querySelector(".national-map")){
+
+        document.querySelector(".national-map").style.display = "none" 
+      }
   }
 
   var pol = ""
@@ -79,25 +103,22 @@ export default function Countries() {
     }
   }
 
-
-  function scrollinto(x) {
-    var w = x.replace('.', '');
-    const y = w.split(" ");
-    const z = document.querySelector(`.${y[0]}`)
-    if (z) {
-      if (z.classList[0] === "partyCard") {
-        z.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
-        z.classList.add('card-scroll')
-        setTimeout(() => {
-
-          z.classList.remove('card-scroll')
-
-        }, 1000)
-      } else {
-        z.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
+  function closeDisplay() {
+    const pW = document.querySelector('.partyDisplay-wrapper')
+    document.querySelector("body").style.overflowY = ""
+    document.querySelector("body").style.marginRight = ""
+    const pC = document.querySelector('.close-display')
+    const wrapper1 = document.querySelector(".important-figures");
+    wrapper1.innerHTML = ""
+    const pD = document.querySelector('.partyDisplay')
+    pW.style.backgroundColor = "rgb(0,0,0,0)"
+    pD.style.opacity = "0"
+    pC.style.top = "-100px"
+    setTimeout(function () {
+      pW.style.display = "none"
+    }, 300);
   }
+
 
   function openDisplay(x) {
     <div className="percentage-parent">
@@ -128,9 +149,8 @@ export default function Countries() {
       document.querySelector(".notes").style.display = "block"
       document.querySelector(".notes").innerHTML = "<h2>Notes personnelles</h2>"
       comm = new DOMParser().parseFromString(x.notes, "text/html")
-      console.log(x.notes, comm.querySelector('.notes-content'))
       if (document.querySelector('.notes-content')) {
-        
+
       } else {
         document.querySelector('.notes').appendChild(comm.querySelector('.notes-content'))
       }
@@ -154,9 +174,43 @@ export default function Countries() {
     pW.querySelector('.party-logo img').scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
     pW.querySelector('.party-logo img').alt = x.IDs[0];
 
+    if (x.euroname) {
+      pW.querySelector(".euro").style.display = "flex"
+      const ue = europe.filter(item => item.name === x.euroname)[0]
+      pW.querySelector('.euro-logo img').src = ue.logo;
+      pW.querySelector('.euro-child h3').innerHTML = ue.name;
+
+      const wrapper = pW.querySelector('.euro .others');
+      wrapper.innerHTML = ""
+      ue.others.map((u) => {
+        if (article.alpha2Code === u.country) {
+
+        } else {
+          const card = document.createElement('div')
+          card.classList.add("ue-card")
+
+          card.innerHTML = `<img src="${u.logo}"></img>`
+          card.addEventListener(("click"), () => {
+            closeDisplay()
+            window.location.replace(
+              window.location.origin + `/#/countries/${u.country}`,
+            );
+          })
+
+          wrapper.appendChild(card)
+        }
+
+      })
+
+    } else {
+      pW.querySelector(".euro").style.display = "none"
+    }
+
+
     if (x.fig) {
+      const wrapper = document.querySelector(".important-figures");
+      wrapper.innerHTML = "<h2>Figures importantes</h2>"
       x.fig.map((fH) => {
-        const wrapper = document.querySelector(".important-figures");
         wrapper.style.display = "block"
         const card = document.createElement('div')
         card.classList.add("figure-card")
@@ -178,23 +232,9 @@ export default function Countries() {
     }
   }
 
-  function closeDisplay() {
-    const pW = document.querySelector('.partyDisplay-wrapper')
-    document.querySelector("body").style.overflowY = ""
-    document.querySelector("body").style.marginRight = ""
-    const pC = document.querySelector('.close-display')
-    const wrapper1 = document.querySelector(".important-figures");
-    wrapper1.innerHTML = ""
-    const pD = document.querySelector('.partyDisplay')
-    pW.style.backgroundColor = "rgb(0,0,0,0)"
-    pD.style.opacity = "0"
-    pC.style.top = "-100px"
-    setTimeout(function () {
-      pW.style.display = "none"
-    }, 300);
-  }
 
-  
+
+
 
   return (
     <>
@@ -209,109 +249,100 @@ export default function Countries() {
           <>
             <div className="country-header">
               <div className="flag">
-                <img src={window.location.origin + '/img/flags/' + id.code.toLowerCase() + ".png"} alt="diewelt"></img>
+                <img src={findFlagUrlByIso2Code(article.alpha2Code)} alt="diewelt"></img>
               </div>
               <h1>{article.translations.fr}</h1>
             </div>
             {map ? (
-<div className="national-map">
-            <div className="map-svg-wrapper"></div>
+              <div className="national-map">
+                <div className="map-svg-wrapper"></div>
 
-              <div className="map-option-wrapper">
-                <div id="cities" className="map-option">
-                  <div className="rounded-toggle-wrapper" onClick={() => {
-                    document.querySelector('#cities .rounded-toggle').classList.toggle("translate-toggle")
-                    document.querySelector('.cities').classList.toggle("hide-cities")
-                    document.querySelector('#cities .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
-                  }}>
-                    <div className="rounded-toggle"></div>
+                <div className="map-option-wrapper">
+                  <div id="cities" className="map-option">
+                    <div className="rounded-toggle-wrapper" onClick={() => {
+                      document.querySelector('#cities .rounded-toggle').classList.toggle("translate-toggle")
+                      document.querySelector('.cities').classList.toggle("hide-cities")
+                      document.querySelector('#cities .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
+                    }}>
+                      <div className="rounded-toggle"></div>
+                    </div>
+                    <span>montrer les grandes villes</span>
                   </div>
-                  <span>montrer les grandes villes</span>
-                </div>
-                <div id="regions" className="map-option">
-                  <div className="rounded-toggle-wrapper" onClick={() => {
-                    document.querySelector('#regions .rounded-toggle').classList.toggle("translate-toggle")
-                    document.querySelector('.regions').classList.toggle("hide-cities")
-                    document.querySelector('#regions .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
-                  }}>
-                    <div className="rounded-toggle"></div>
+                  <div id="regions" className="map-option">
+                    <div className="rounded-toggle-wrapper" onClick={() => {
+                      document.querySelector('#regions .rounded-toggle').classList.toggle("translate-toggle")
+                      document.querySelector('.regions').classList.toggle("hide-cities")
+                      document.querySelector('#regions .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
+                    }}>
+                      <div className="rounded-toggle"></div>
+                    </div>
+                    <span>montrer les régions (ou équivalents du pays)</span>
                   </div>
-                  <span>montrer les régions (ou équivalents du pays)</span>
-                </div>
-                <div id="regions-names" className="more-map-option">
-                  <div className="angle">
+                  <div id="regions-names" className="more-map-option">
+                    <div className="angle">
 
+                    </div>
+                    <div className="rounded-toggle-wrapper" onClick={() => {
+                      document.querySelector('#regions-names .rounded-toggle').classList.toggle("translate-toggle")
+                      document.querySelector('.regions-name').classList.toggle("hide-cities")
+                      document.querySelector('#regions-names .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
+                    }}>
+                      <div className="rounded-toggle"></div>
+                    </div>
+                    <span>et les noms des régions</span>
                   </div>
-                  <div className="rounded-toggle-wrapper" onClick={() => {
-                    document.querySelector('#regions-names .rounded-toggle').classList.toggle("translate-toggle")
-                    document.querySelector('.regions-name').classList.toggle("hide-cities")
-                    document.querySelector('#regions-names .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
-                  }}>
-                    <div className="rounded-toggle"></div>
+                  <div id="water" className="map-option">
+                    <div className="rounded-toggle-wrapper" onClick={() => {
+                      document.querySelector('#water .rounded-toggle').classList.toggle("translate-toggle")
+                      document.querySelector('.water').classList.toggle("hide-cities")
+                      document.querySelector('#water .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
+                    }}>
+                      <div className="rounded-toggle"></div>
+                    </div>
+                    <span>montrer les fleuves principaux</span>
                   </div>
-                  <span>et les noms des régions</span>
-                </div>
-                <div id="water" className="map-option">
-                  <div className="rounded-toggle-wrapper" onClick={() => {
-                    document.querySelector('#water .rounded-toggle').classList.toggle("translate-toggle")
-                    document.querySelector('.water').classList.toggle("hide-cities")
-                    document.querySelector('#water .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
-                  }}>
-                    <div className="rounded-toggle"></div>
-                  </div>
-                  <span>montrer les fleuves principaux</span>
-                </div>
-                <div id="water-names" className="more-map-option">
-                  <div className="angle">
+                  <div id="water-names" className="more-map-option">
+                    <div className="angle">
 
+                    </div>
+                    <div className="rounded-toggle-wrapper" onClick={() => {
+                      document.querySelector('#water-names .rounded-toggle').classList.toggle("translate-toggle")
+                      document.querySelector('.water-name').classList.toggle("hide-cities")
+                      document.querySelector('#water-names .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
+                    }}>
+                      <div className="rounded-toggle"></div>
+                    </div>
+                    <span>et les noms des fleuves</span>
                   </div>
-                  <div className="rounded-toggle-wrapper" onClick={() => {
-                    document.querySelector('#water-names .rounded-toggle').classList.toggle("translate-toggle")
-                    document.querySelector('.water-name').classList.toggle("hide-cities")
-                    document.querySelector('#water-names .rounded-toggle-wrapper').classList.toggle("translate-toggle-wrapper")
-                  }}>
-                    <div className="rounded-toggle"></div>
-                  </div>
-                  <span>et les noms des fleuves</span>
                 </div>
+
+
+
               </div>
-            
-              
-
-            </div>
             ) : (
               <></>
             )
 
             }
-            
+
             <div className="table-of-contents">
-              {article.data ? (
-                <>
-                  {article.data.map((d) => {
-                    return (<h3 onClick={() => { scrollinto(d) }}>{d}</h3>)
-                  })}
-                </>
-              ) : (
-                <></>
-              )
-              }
+              <h3 onClick={(d) => { scrollinto(d.target.innerHTML) }}>I - Régime politique</h3>
+              <h3 onClick={(d) => { scrollinto(d.target.innerHTML) }}>II - Exécutif</h3>
+              <h3 onClick={(d) => { scrollinto(d.target.innerHTML) }}>III - Parlements</h3>
+              <h3 onClick={(d) => { scrollinto(d.target.innerHTML) }}>IV - Partis politiques</h3>
+              <h3 onClick={(d) => { scrollinto(d.target.innerHTML) }}>V - Notes personnelles</h3>
             </div>
 
 
-            {article.politics ? (
               <div className="fonctionnement country-div I">
                 <h1 className="country-title">Régime politique</h1>
               </div>
-            ) : (
-              <></>
-            )}
 
-            {article.executif ? (
               <div className="gouvernement country-div II">
                 <h1 className="country-title">Exécutif actuel</h1>
                 <div className="display-government">
-                  {article.executif.head.map((e) => {
+                {article.executif ? (
+                  article.executif.head.map((e) => {
                     return (
                       <div className="head-State">
                         <div className="state-figure-pic" style={{ backgroundImage: `url(${e.img})` }}></div>
@@ -324,9 +355,14 @@ export default function Countries() {
                         </div>
                       </div>
                     )
-                  })}
+                  })
+                ) : (
+                  <>
+                  </>
+                )}
                   <div className="ministers">
-                    {article.executif.ministers.map((i) => {
+                  {article.executif ? (
+                    article.executif.ministers.map((i) => {
                       return (
                         <div className="minister">
                           <div className="left-minister">
@@ -338,21 +374,19 @@ export default function Countries() {
                           </div>
                         </div>
                       )
-                    })}
-
+                    })
+                  ) : (
+                    <>
+                    </>
+                  )}
                   </div>
                 </div>
               </div>
-            ) : (
-              <>
-              </>
-            )}
 
-            {article.votes ? (
               <div className="votes III country-div">
                 <h1 className="country-title">Composition des Parlements</h1>
-
-                {article.votes.map((v) => {
+                {article.votes ? (
+                  article.votes.map((v) => {
                   return (<div className="chamber">
                     <h2>{v.name} ({v.totalSeats} sièges)</h2>
                     {v.composition.map((w) => {
@@ -373,19 +407,18 @@ export default function Countries() {
                         </div>)
                     })}
                   </div>)
-                })}
+                })
+              ) : (
+                <>
+                </>
+              )}
               </div>
-            ) : (
-              <></>
-            )
-            }
 
-            {article.partis ? (
               <div className="partis IV country-div">
                 <h1 className="country-title">Liste des différents partis politiques</h1>
                 <div className="allparties">
-
-                  {article.partis.map((p) => {
+                {article.partis ? (
+                  article.partis.map((p) => {
                     return (<div className={"partyCard" + " " + p.IDs[0] + " " + p.IDs[1] + " " + p.IDs[2]} onClick={() => { openDisplay(p) }}>
                       <div className="partyLogo" style={{ backgroundImage: `url(${p.logo})` }}>
                       </div>
@@ -397,7 +430,11 @@ export default function Countries() {
                       </div>
                       <p className="partyMore" >en savoir +</p>
                     </div>)
-                  })}
+                  })
+                ) : (
+                  <>
+                  </>
+                )}
                   <div className="partyDisplay-wrapper">
                     <div className="close-display" onClick={() => { closeDisplay() }}>
                       <h3>fermer</h3>
@@ -410,13 +447,22 @@ export default function Countries() {
                         <h1 className="party-name"></h1>
                       </div>
                       <div className="seats-data"></div>
-
+<div className="euro">
+                        <div className="euro-logo">
+                          <img></img>
+                        </div>
+                        <div className="euro-child">
+                          <h3></h3>
+                        <div className="others"></div>
+                        </div>
+                        
+                      </div>
                       <div className="notes">
 
                       </div>
-
-                      <h2>Figures importantes</h2>
+                      
                       <div className="important-figures">
+                      <h2>Figures importantes</h2>
                       </div>
 
                     </div>
@@ -424,18 +470,10 @@ export default function Countries() {
 
                 </div>
               </div>
-            ) : (
-              <></>
-            )
-            }
 
-            {article.actu ? (
               <div className="actu V country-div">
-                <h1 className="country-title">Commentaire sur l'actualité</h1>
+                <h1 className="country-title">Notes personnelles</h1>
               </div>
-            ) : (
-              <></>
-            )}
           </>
         ) : (
           <p>à remplir</p>

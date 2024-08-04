@@ -6128,13 +6128,6 @@
     },
     {
         "name": "France",
-        "data": [
-            "I - Régime politique",
-            "II - Exécutif actuel",
-            "III - Parlement",
-            "IV - Partis politiques",
-            "V - Commentaire sur l'actualité"
-        ],
         "votes": [
             {
                 "name": "Sénat",
@@ -6346,6 +6339,7 @@
                 "logo": "https://imgur.com/4T2CDy0.png",
                 "orientation": "gauche",
                 "mainIdeas": "Antilibéralisme, écologie, populisme",
+                "euroname":"The Left",
                 "notes": "",
                 "seats": [
                     {
@@ -6404,6 +6398,7 @@
                 "logo": "https://imgur.com/dK7Flnn.png",
                 "orientation": "centre gauche",
                 "mainIdeas": "Ecologie",
+                "euroname":"Greens",
                 "notes": "",
                 "seats": [
                     {
@@ -6448,6 +6443,7 @@
             },
             {
                 "name": "Parti Socialiste",
+                "euroname":"S&D",
                 "IDs": [
                     "PS",
                     "SER",
@@ -6536,6 +6532,7 @@
             },
             {
                 "name": "Mouvement Démocratique",
+                "euroname":"Renew",  
                 "IDs": [
                     "MoDem",
                     "UC"
@@ -6584,6 +6581,7 @@
             },
             {
                 "name": "Renaissance",
+                "euroname":"Renew",  
                 "IDs": [
                     "Ren",
                     "RDPI"
@@ -6628,6 +6626,7 @@
             },
             {
                 "name": "Horizons",
+                "euroname":"Renew",  
                 "IDs": [
                     "Hor",
                     "LIRT"
@@ -6665,6 +6664,7 @@
             },
             {
                 "name": "Les Républicains",
+                "euroname":"PPE",  
                 "IDs": [
                     "LR"
                 ],
@@ -6736,6 +6736,7 @@
             },
             {
                 "name": "Rassemblement National",
+                "euroname":"ID",  
                 "IDs": [
                     "RN"
                 ],
@@ -6865,6 +6866,7 @@
             ]
         },
         "actu": "<div class='comm'><p>Le second mandat d'Emmanuel Macron, réélu en 2022, s'est entamé par un premier échec lors des élections législatives de la même année. En effet, la coalition présidentielle Ensemble !, composé de Renaissance (ex-LREM), du Modem et de Horizons, n'obtient pas la majorité absolue à l'Assemblée Nationale (200 sièges sur les 289 requis). Elle est donc contrainte de s'allier avec d'autres groupes parlementaires pour faire passer des lois. Ces élections ont aussi vu une nette progression de l'extrême droite avec le Rassemblement National qui obtient 88 sièges contre seulement 7 en 2017.</p><p>Dans ce cadre de majorité relative, la coalition présidentielle menée par la Première Ministre Elisabeth Borne est contraint de faire passer en force de nombreux projets de loi impopulaire comme la réforme des retraites ou la loi immigration. Elisabeth Borne a même atteint un record d'usage de l'article 49.3 depuis Rocard. Par conséquent, le président et son parti deviennent de moins en moins populaire, en particulier à la suite de la loi immigration. Cela pousse Elisabeth Borne à la démission.</p><p>Pour relancer son quinquennat, Emmanuel Macron nomme, le 9 janvier 2024, Gabriel Attal comme premier ministre, le plus jeune de la Vème République. Bien que vu comme un macroniste, une copie carbone du président plus jeune, qui aurait continué le \"en même temps\" macronien et même issu de l'aile gauche du parti, les actions du jeune premier ministre révèlent plutôt une <i>droitisation</i> du parti présidentiel. Dans sa déclaration de politique générale du 30 janvier, il met en avant \"la valeur travail, les mesures punitives à l'encontre des jeunes délinquants et l'allègement des normes [environnementales]\" lit-on sur Public Sénat. De nombreux commentateurs et experts parlent même de droitisation du gouvernement voire d'un gouvernement \"macrosarkozyste\". En effet, Attal a nommé plusieurs anciencs sarkozystes de LR à des postes ministériels comme Rachida Dati à la culture ou Catherine Vautrin à la santé.</p><p>Cette droitisation s'inscrit dans une stratégie électorale. En effet, l'électorat français penche de plus en plus à droite et notamment vers l'extrême droite. Ainsi, Macron pour conserver ses électeurs doit jouer sur les terrains de la droite. C'est pourquoi le parti présidentiel montre de plus en plus une volonté d'autorité personnifié par Attal qui, à de nombreuses reprises, insiste sur l'importance de l'autorité notamment chez les jeunes pour éviter la violece. <i>\"Tu casses, tu répares, tu salis, tu nettoies, tu défies l’autorité, on t’apprend à la respecter\"</i>(Gabriel Attal, 30 janvier 2024). Cet enjeu d'influence face à la montée du RN est particulièrement importante aujourd'hui avec les élections européennes qui arrivent. Pour Bardella (tête de liste RN), ces élections pourrait même bouleverser la situation nationale puisque pour lui une victoire de son parti devrait mener à une réélection de l'Assemblée Nationale. </p><p>Cette tendance est confirmée par des décisions notables sur l'agriculture et l'éducation. A la suite des protestations des agriculteurs, qui ont troublé lourdement les premières semaines d'Attal à Matignon, le gouvernement a cédé à de nombreuses demandes du FNSEA, la syndicat majoritaire chez les agriculteurs. Ces mesures contiennent notamment des allégements de normes environnementales. Bein qu'Attal parle de \"simplification\" des normes, ces mesures marquent un recul des ambitions écologiques de la France qui sont déjà reléguées à un second plan lors des campagnes pour les élections européennes. De plus, Matignon ressert la vis sur l'école avec différentes mesures comme le projet d'uniforme obligatoire, du 8-18h et une volonté de rendre obligatoire le SNU.</p><p>De manière générale, le paysage politique français a fortement changé depuis Hollande. Tout d'abord, il a été bouleversé en 2017 avec la naissance de La République en Marche mené par Macron qui remporte les élections présidentielles la même année. Un autre parti connait aussi une nette prgression. Le RN (ex-FN), longtemps relégué au rang de parti minoritaire, est devenu le 1er parti d'opposition avec 88 sièges à l'Assemblée Nationale et est même vu comme le vainqueur des élections européennes comme en 2019. Plus largement, l'extrême droite progresse. En effet, Reconquête, le parti d'Eric Zemmour fait 7% aux présidentielles, plus que LR, le PS ou EELV. Depuis 2017, les partis traditionnels perdent en influence : ni le PS ni LR n'atteint les 5% aux dernières présidentielles. Ils conservent, tout de même, une importance locale et régionale, ce qui permet aux 2 parties d'êtres les deux forces majeurs au Sénat (groupe LR et groupe SER pour le PS).</p><p>Enfin, les élections européennes sont très importantes sur le plan national puisqu'elles pourront infirmer ou confirmer des tendances générales. Nous pourrons observer le déclin de la majorité présidentielles, la popularité du RN, la chute de LR ou la confirmation de la perte en popularité de LFI. Pour Attal et Bardella, ces élections européennes sont mêmes les plus importantes de l'histoire de l'UE.</p><p>Les élections européennes du 9 juin ont confirmé la montée en puissance du RN qui obtient 32% des voix, et de l’extrême droite en générale puisque Reconquête obtient 5 sièges. Ce vote a surtout révélé le désaveu des français de la politique macroniste qui obtient deux fois moins de sièges que le RN, presque autant que le PS de Glucksmann. Mais ces résultats ont provoqué un réel chaos politique en France puisque dans la soirée des résultats, le président a annoncé la dissolution de l’Assemblée Nationale. Ce chaos est marqué par l’implosion des Républicain entre l’aile de droite mené par Eric Ciotti qui rejoint Bardella et le RN et l’aile de gauche qui s’y oppose fortement. En effet, de par la popularité du Rassemblement Nationale, plusieurs organes politiques cherchent à faire alliance. C’est le cas de Marion Maréchal Le Pen et une partie de Reconquête. Cependant, Eric Zemmour, chef du parti, refuse et exclu les “traitres”. Le parti ne compte donc plus qu’un élu au Parlement Européen. Dans ce chaos, la gauche (EELV, PS, LFI et PCF)  parvient à s’organiser rapidement autour d’un programme et ainsi former le Nouveau Front Populaire. Le NFP et le RN sont les deux forces principales de ces élections, mais le RN est toujours devant donc à l’issue des élections du 30 juin et du 7 juillet, Bardella pourrait être nommé premier ministre si son parti obtient la majorité absolue.</p></div>",
+        
         "topLevelDomain": [
             ".fr"
         ],
@@ -6942,7 +6944,7 @@
             "hr": "Francuska",
             "fa": "فرانسه"
         },
-        "flag": "https://restcountries.eu/data/fra.svg",
+        "flag": "https://imgur.com/kZS5Vur.png",
         "regionalBlocs": [
             {
                 "acronym": "EU",
@@ -9629,7 +9631,532 @@
                 "otherNames": []
             }
         ],
-        "cioc": "ITA"
+        "cioc": "ITA",
+        "votes": [
+            {
+                "name": "Senato della Repubblica",
+                "totalSeats": 200,
+                "composition": [
+                    {
+                        "name": "SI",
+                        "seats": "3",
+                        "color": "darkred"
+                    },
+                    {
+                        "name": "EV",
+                        "seats": "1",
+                        "color": "green"
+                    },
+                    {
+                        "name": "M5S",
+                        "seats": "28",
+                        "color": "red"
+                    },
+                    {
+                        "name": "PD",
+                        "seats": "40",
+                        "color": "olive"
+                    },
+                    {
+                        "name": "Az",
+                        "seats": "4",
+                        "color": "blue"
+                    },
+                    {
+                        "name": "IV",
+                        "seats": "7",
+                        "color": "purple"
+                    },
+                    {
+                        "name": "SVP",
+                        "seats": "2",
+                        "color": "black"
+                    },
+                    {
+                        "name": "FI",
+                        "seats": "18",
+                        "color": "darkgreen",
+                        "gouvernement": true
+                    },
+                    {
+                        "name": "FdI",
+                        "seats": "66",
+                        "color": "darkblue",
+                        "gouvernement": true
+                    },
+                    {
+                        "name": "Lega",
+                        "seats": "29",
+                        "color": "#f9c618",
+                        "gouvernement": true
+                    }
+                ]
+            },
+            {
+                "name": "Camera dei deputati",
+                "totalSeats": 400,
+                "composition": [
+                    {
+                        "name": "SI",
+                        "seats": "4",
+                        "color": "darkred"
+                    },
+                    {
+                        "name": "EV",
+                        "seats": "6",
+                        "color": "green"
+                    },
+                    {
+                        "name": "M5S",
+                        "seats": "52",
+                        "color": "red"
+                    },
+                    {
+                        "name": "PD",
+                        "seats": "69",
+                        "color": "olive"
+                    },
+                    {
+                        "name": "Az",
+                        "seats": "12",
+                        "color": "blue"
+                    },
+                    {
+                        "name": "IV",
+                        "seats": "9",
+                        "color": "purple"
+                    },
+                    {
+                        "name": "SVP",
+                        "seats": "3",
+                        "color": "black"
+                    },
+                    {
+                        "name": "FI",
+                        "seats": "45",
+                        "color": "darkgreen",
+                        "gouvernement": true
+                    },
+                    {
+                        "name": "FdI",
+                        "seats": "119",
+                        "color": "darkblue",
+                        "gouvernement": true
+                    },
+                    {
+                        "name": "Lega",
+                        "seats": "66",
+                        "color": "#f9c618",
+                        "gouvernement": true
+                    }
+                ]
+            }
+        ],
+        "partis": [
+            {
+                "name": "Sinistra Italiana",
+                "IDs": [
+                    "SI"
+                ],
+                "logo": "https://imgur.com/C70PizS.png",
+                "orientation": "gauche",
+                "mainIdeas": "social-démocratie",
+                "eurologo":"https://imgur.com/oK3deUM.png",
+                "euroname":"The Left",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "3",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "4",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "2",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Nicola Fratoianni",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nicola_Fratoianni_Quirinale_2022_%28cropped%29.jpg/800px-Nicola_Fratoianni_Quirinale_2022_%28cropped%29.jpg",
+                        "job": "député et secrétaire du parti",
+                        "date": "1972-",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Europa Verde",
+                "IDs": [
+                    "EV"
+                ],
+                "logo": "https://imgur.com/HaACkI9.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "écologie, progressisme",
+                "euroname":"Greens",  
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "1",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "6",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "4",
+                        "total" : "76"
+                    }
+                ]
+            },
+            {
+                "name": "Movimento 5 Stelle",
+                "IDs": [
+                    "M5S"
+                ],
+                "logo": "https://imgur.com/3lYxUou.png",
+                "orientation": "attrape-tout",
+                "euroname":"The Left",  
+                "mainIdeas": "populisme, antisystème, syncrétisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "28",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "52",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "8",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Beppe Grillo",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Beppe_Grillo_3.jpg/330px-Beppe_Grillo_3.jpg",
+                        "job": "humoriste, co-fondateur du parti",
+                        "date": "1948-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Gianroberto Casaleggio",
+                        "img": "https://media-assets.wired.it/photos/615c4c6c1b0ff3843e30f1bd/master/w_1600%2Cc_limit/wired_placeholder_dummy.png",
+                        "job": "co-fondateur du parti",
+                        "date": "1954-2016",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Partito Democratico",
+                "IDs": [
+                    "PD"
+                ],
+                "logo": "https://imgur.com/GMamp0w.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "social-libéralisme",
+                "euroname":"S&D",  
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "40",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "69",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "21",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Matteo Renzi",
+                        "img": "https://www.euractiv.fr/wp-content/uploads/sites/3/2014/07/matteo_renzi_addresses_the_european_parliament._strasbourg_2_july._european_parliamentflickr.jpg.jpeg",
+                        "job": "président du conseil des ministres (2014-2016), sénateur, secrétaire du parti",
+                        "date": "1975-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Enrico Letta",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Enrico_Letta_in_2024.jpg/330px-Enrico_Letta_in_2024.jpg",
+                        "job": "président du conseil des ministres (2013-2014), secrétaire du parti (2021-2023)",
+                        "date": "1966-",
+                        "info": ""
+                    },
+                    {
+                        "name": "Elly Schlein",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Elly_Schlein_in_2023_%28cropped%29.jpg/330px-Elly_Schlein_in_2023_%28cropped%29.jpg",
+                        "job": "eurodéputée, députée, secrétaire du parti (2023-)",
+                        "date": "1985-",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Azione",
+                "IDs": [
+                    "Az"
+                ],
+                "logo": "https://imgur.com/MG5HJyd.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "social-libéralisme, europhilie",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "4",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "12",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "76"
+                    }
+                ]
+            },
+            {
+                "name": "Italia Viva",
+                "IDs": [
+                    "IV"
+                ],
+                "logo": "https://imgur.com/TMMrEc8.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "social-libéralisme, europhilie",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "7",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "9",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "0",
+                        "total" : "76"
+                    }
+                ]
+            },
+            {
+                "name": "Südtiroler Volkspartei",
+                "IDs": [
+                    "SVP"
+                ],
+                "logo": "https://imgur.com/dskda3p.png",
+                "orientation": "centre-gauche",
+                "mainIdeas": "défense des minorités allemandes et ladines du Tyrol du Sud",
+                "notes": "",
+                "euroname":"PPE",  
+
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "2",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "3",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "1",
+                        "total" : "76"
+                    }
+                ]
+            },
+            {
+                "name": "Forza Italia",
+                "IDs": [
+                    "FI"
+                ],
+                "euroname":"PPE",  
+                "logo": "https://imgur.com/3T3IZP3.png",
+                "orientation": "droite",
+                "mainIdeas": "libéralisme, conservatisme, populisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "18",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "45",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "8",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Silvio Berlusconi",
+                        "img": "https://www.larousse.fr/encyclopedie/data/images/1317055-Silvio_Berlusconi.jpg",
+                        "job": "président du conseil des ministres, fondateur du parti, homme d'affaire",
+                        "date": "1936-2023",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Fratelli d'Italia",
+                "euroname":"ECR",  
+
+                "IDs": [
+                    "FdI"
+                ],
+                "logo": "https://imgur.com/2E3YwCa.png",
+                "orientation": "extrême-droite",
+                "mainIdeas": "nationalisme, post-fascisme, populisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "66",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "119",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "24",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Giorgia Meloni",
+                        "img": "https://img.lemde.fr/2024/07/02/0/0/6000/4000/1440/960/60/0/03539b5_2024-07-02t173818z-595980059-rc2th8asl3tp-rtrmadp-3-italy-meloni.JPG",
+                        "job": "présidente du conseil des ministres",
+                        "date": "1977-",
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "name": "Lega",
+                "euroname":"ID",  
+                "IDs": [
+                    "Lega"
+                ],
+                "logo": "https://imgur.com/xqEkFFc.png",
+                "orientation": "extrême-droite",
+                "mainIdeas": "populisme, fédéralisme, régionalisme",
+                "notes": "",
+                "seats": [
+                    {
+                        "name" : "Senato della Repubblica",
+                        "seats" : "29",
+                        "total" : "200"
+                    },
+                    {
+                        "name" : "Camera dei deputati",
+                        "seats" : "66",
+                        "total" : "400"
+                    },
+                    {
+                        "name" : "Parlement Européen",
+                        "seats" : "8",
+                        "total" : "76"
+                    }
+                ],
+                "fig": [
+                    {
+                        "name": "Matteo Salvini",
+                        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Matteo_Salvini_Quirinale_2019.jpg/330px-Matteo_Salvini_Quirinale_2019.jpg",
+                        "job": "député et secrétaire du parti",
+                        "date": "1973-",
+                        "info": ""
+                    }
+                ]
+            }
+        ],
+        "politics": "<div class='fct'><p>L’Italie, après 20 ans de régime fasciste, devient en 1948 une République démocratique parlementaire dite régionalisée (à mi-chemin entre fédérale et centrale, l’indépendance politique des régions est variable). Avec une réforme récente, l’autonomie des régions s’est agrandie, elles peuvent avoir accès à différentes recettes de taxes et prendre en charge certain services comme l’éducation au sein des conseils régionaux. Le système politique italien est organisé autour de la Constitution de 1948.</p><p>Les deux chambres ont autant de pouvoir dans le système italien. La chambre haute, le Sénat (*Senato della Repubblica*) est composé de 200 sièges avec des sièges supplémentaires pour des sénateurs à vie nommés par le Président de la République. Ils sont nommés pour leur mérite auprès de la nation que ce soit dans l’art, la science ou la politique. Le chambre basse, la chambre des députés (*Camera dei deputati*) est composé de 400 sièges. Les deux chambres ont les mêmes pouvoirs on parle donc ici d’un “système bicaméral parfait”. Le président choisit même le président du conseil des ministres (chef du gouvernement) à partir du Parlement (assemblée des deux chambres) et non pas à partir d’une seule des deux chambres. Il le choisit parmi le plus grand groupe politique élu. Pourtant ce système entraîne une grande instabilité puisque les deux chambres peuvent destituer le gouvernement, ce qui favorise de nombreux changements de président du conseil des ministres.</p><p>L’élection de ces deux chambres se fait de manière mixte. 3/8 des parlementaires sont élus au scrutin majoritaire à un tour tandis que les 5/8 restants sont élus à la proportionnelle. Le système italien favorise l’émergence de petit parti, les élus doivent souvent donc former des coalitions pour diriger.</p><p>Le président est élu de manière indirect par une collège électoral composé à la fois des députés, des sénateurs et des élus régionaux. Aux trois premiers tours de scrutin, la majorité des deux tiers du collège électoral est requise pour emporter l'élection. À partir du quatrième tour, la majorité absolue suffit. Les élections peuvent donc se poursuivre pendant de nombreux tours. Par exemple, Sergio Mattarella est réélu au bout de 7 tours en 2022. Cependant, il n’a qu’un rôle honorifique et se doit de rester indépendant, neutre dans les débats.</div>",
+        "executif": {
+            "head": [
+                {
+                    "name": "Sergio Mattarella",
+                    "img": "https://cdn-europe1.lanmedia.fr/var/europe1/storage/images/europe1/international/italie-sergio-mattarella-le-president-qui-a-barre-la-route-aux-populistes-3665045/48435149-1-fre-FR/Italie-Sergio-Mattarella-le-president-qui-a-barre-la-route-aux-populistes.jpg",
+                    "dates": "Mandat : 2015-2022, 2022-2029",
+                    "job": "président de la République",
+                    "oldJobs": "Juge à la Cour constitutionnelle, ministre de la Défense et de l’Education, député",
+                    "birth": "1941",
+                    "pol": "Indépendant (lié à PD auparavant)",
+                    "polShort": "PD"
+                },
+                {
+                    "name": "Giorgia Meloni",
+                    "img": "https://img.lemde.fr/2024/07/02/0/0/6000/4000/1440/960/60/0/03539b5_2024-07-02t173818z-595980059-rc2th8asl3tp-rtrmadp-3-italy-meloni.JPG",
+                    "dates": "depuis le 22 octobre 2022",
+                    "job": "présidente du conseil des ministres",
+                    "oldJobs": "Députée, ministre de la Jeunesse sous Silvio Berlusconi, présidente des Frères d’Italie",
+                    "birth": "1977",
+                    "pol": "Frères d’Italie (Fratelli d’Italia, FdL)",
+                    "polShort": "FdL"
+                }
+            ],
+            "ministers": [
+                {
+                    "name": "Antonio Tajani",
+                    "job": "Vice-président du Conseil des ministres, Ministre des Affaires étrangères (secrétaire de Forz Italia)",
+                    "logo": "https://imgur.com/3T3IZP3.png"
+                },{
+                    "name": "Matteo Salvini",
+                    "job": "Vice-président du Conseil des ministres, ministre des Infrastructures et de la Mobilité durable (secrétaire de Lega)",
+                    "logo": "https://imgur.com/xqEkFFc.png"
+                },
+                {
+                    "name": "Giancarlo Giorgetti",
+                    "job": "Ministre de l'Économie et des Finances",
+                    "logo": "https://imgur.com/xqEkFFc.png"
+                },
+                {
+                    "name": "Carlo Nordio",
+                    "job": "Ministre de la Justice",
+                    "logo": "https://imgur.com/2E3YwCa.png"
+                }
+            ]
+        },
+        "actu": "" 
     },
     {
         "name": "Jamaica",

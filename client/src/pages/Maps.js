@@ -82,7 +82,7 @@ export default function NotFound() {
         }
         const country = a.parentElement
         const allParts = [...country.children]
-        if (country.id === "FR") {
+        if (["FR", "IT"].includes(country.id)) {
           allParts.map((p) => {
             p.style.fillOpacity = "0.3"
             p.style.fill = "var(--red-red)"

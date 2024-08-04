@@ -1,0 +1,85 @@
+[
+    {
+        "name": "The Left",
+        "logo": "https://imgur.com/oK3deUM.png", 
+        "others" : [
+            {
+                "logo": "https://imgur.com/srEmCVy.png", 
+                "country": "FR"
+            }
+        ]
+    },
+    {
+        "name": "Greens",
+        "logo": "https://imgur.com/qSZbZYt.png",
+        "id": "G", 
+        "others" : [
+            {
+                "logo": "https://imgur.com/ppEm4JV.png", 
+                "country": "FR"
+            }
+        ]
+    },
+    {
+        "name": "Renew",
+        "logo": "https://imgur.com/5e2KpKw.png",
+        "others" : [
+            {
+                "logo": "https://imgur.com/xW6aNpF.png", 
+                "country": "FR"
+            }
+        ]
+    },
+    {
+        "name": "S&D",
+        "logo": "https://imgur.com/vz9lEBw.png", 
+        "others" : [
+            {
+                "logo": "https://imgur.com/P0SwRzy.png", 
+                "country": "FR"
+            },
+            {
+                "logo": "https://imgur.com/GMamp0w.png", 
+                "country": "IT"
+            }
+        ]
+    },
+    {
+        "name": "PPE",
+        "logo": "https://imgur.com/3S0J7iE.png", 
+        "others" : [
+            {
+                "logo": "https://imgur.com/srEmCVy.png", 
+                "country": "FR"
+            },
+            {
+                "logo": "https://imgur.com/3T3IZP3.png", 
+                "country": "IT"
+            }
+        ]
+    },
+    {
+        "name": "ECR",
+        "logo": "https://imgur.com/jBshYHF.png", 
+        "others" : [
+            {
+                "logo": "https://imgur.com/2E3YwCa.png", 
+                "country": "IT"
+            }
+        ]
+    },
+    {
+        "name": "ID",
+        "logo": "https://imgur.com/u8RBnot.png", 
+        "others" : [
+            {
+                "logo": "https://i.la-croix.com/729x486/smart/2018/06/02/1200943879/Logo-Rassemblement-national-reprenant-flamme-Front-national_0.jpg", 
+                "country": "FR"
+            },
+            {
+                "logo": "https://imgur.com/xqEkFFc.png", 
+                "country": "IT"
+            }
+        ]
+    }
+]
