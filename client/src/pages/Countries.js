@@ -5,7 +5,6 @@ import Header from "./Header";
 import Dot from "./Dot";
 import { useOutletContext } from "react-router-dom";
 import { isMobile } from "react-device-detect";
-import { findFlagUrlByIso2Code } from "country-flags-svg";
 
 
 export default function Countries() {
@@ -249,7 +248,7 @@ export default function Countries() {
           <>
             <div className="country-header">
               <div className="flag">
-                <img src={findFlagUrlByIso2Code(article.alpha2Code)} alt="diewelt"></img>
+                <img src={window.location.origin + '/img/flags/' + id.code.toLowerCase() + ".png"} alt="diewelt"></img>
               </div>
               <h1>{article.translations.fr}</h1>
             </div>
