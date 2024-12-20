@@ -5,6 +5,7 @@ import Header from "./Header";
 import Dot from "./Dot";
 import { useOutletContext } from "react-router-dom";
 import { isMobile } from "react-device-detect";
+import $ from 'jquery';
 
 
 export default function Countries() {
@@ -232,7 +233,39 @@ export default function Countries() {
   }
 
 
+  function createFields() {
+    $('.field').remove();
+    var container = $('#container');
+    for(var i = 0; i < +$('input:text').val(); i++) {
+        $('<div/>', {
+            'class': 'field'
+        }).appendTo(container);
+    }
+}
 
+function distributeFields() {
+    var radius = 100;
+    var fields = $('.field'), container = $('#container'),
+        width = container.width(), height = container.height(),
+        angle = 0, step = (Math.PI) / (fields.length - 1);
+    fields.each(function() {
+        var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
+        var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
+        $(this).css({
+            left: x + 'px',
+            top: y + 'px'
+        });
+        angle += step;
+    });
+}
+
+$('input').change(function() {
+    createFields();
+    distributeFields();
+});
+
+createFields();
+distributeFields();
 
 
   return (
@@ -243,6 +276,14 @@ export default function Countries() {
           window.location.origin + '/#/maps',
         );
       }}><span>←</span> Retourner sur la carte</div>
+
+<input type="text" value="20" />
+<div id="container">
+    <div id="center"></div>
+    <div id="crosshair-x"></div>
+    <div id="crosshair-y"></div>
+</div>
+
       <div className="country">
         {article ? (
           <>

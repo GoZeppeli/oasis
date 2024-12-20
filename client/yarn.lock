@@ -2072,6 +2072,13 @@
     "expect" "^29.0.0"
     "pretty-format" "^29.0.0"
 
+"@types/jquery@^3.5.30":
+  "integrity" "sha512-nbWKkkyb919DOUxjmRVk8vwtDb0/k8FKncmUKFi+NY+QXqWltooxTrswvz4LspQwxvLdvzBN1TImr6cw3aQx2A=="
+  "resolved" "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.30.tgz"
+  "version" "3.5.30"
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   "integrity" "sha512-U3PUjAudAdJBeC2pgN8uTIKgxrb4nlDF3SF0++EldXQvQBGkpFZMSnwQiIoDU77tv45VgNkl/L4ouD+rEomujw=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.14.tgz"
@@ -2192,6 +2199,11 @@
     "@types/http-errors" "*"
     "@types/mime" "*"
     "@types/node" "*"
+
+"@types/sizzle@*":
+  "integrity" "sha512-0vWLNK2D5MT9dg0iOo8GlKguPAU02QjmZitPEsXRuJXU/OGIOt9vT9Fc26wtYuavLxtO45v9PGleoL9Z0k1LHg=="
+  "resolved" "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.8.tgz"
+  "version" "2.3.8"
 
 "@types/sockjs@^0.3.33":
   "integrity" "sha512-tIF57KB+ZvOBpAQwSaACfEu7htponHXaFzP7RfKYgsOS0NoYnn+9+jzp7bbq4fWerizI3dTB4NfAZoyeQKWJLw=="
@@ -6226,6 +6238,11 @@
   "integrity" "sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q=="
   "resolved" "https://registry.npmjs.org/jiti/-/jiti-1.21.0.tgz"
   "version" "1.21.0"
+
+"jquery@^3.7.1":
+  "integrity" "sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz"
+  "version" "3.7.1"
 
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="

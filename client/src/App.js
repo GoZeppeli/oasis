@@ -3,6 +3,7 @@ import './index.css';
 import './page.css';
 import './other.css';
 import './refs.css';
+import './test.css';
 
 import {
   createHashRouter,

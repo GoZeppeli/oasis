@@ -22,6 +22,7 @@ export default function Index() {
         a.appendChild(span);
         var prevP = document.querySelector('.preview p')
         var prev = document.querySelector('.preview')
+
         if(prevH1){
           prevH1.innerHTML = `${x.title}`
         }
@@ -35,9 +36,7 @@ export default function Index() {
     }
 
     useEffect(() => {
-      console.log("hey")
       if(allarticles){
-        console.log("bro")
         const r = [...allarticles].reverse()
         setArticles(r.slice(0,10))
         preview({title : r[0].title, img: r[0].img, link : r[0]._id.$oid, description: r[0].description})
@@ -145,14 +144,25 @@ export default function Index() {
             </div>
           {articles ? (
             articles.map((a, index) => {
-              return(
-              <Link to={`/page/${a._id.$oid}`}>
-              <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
-                <span>{index + 1}.</span>
-                <p id={index} >{a.title}</p>
-              </div>
-              </Link>
-              )
+              if(a.title.length > 30){
+                return(
+                <Link to={`/page/${a._id.$oid}`}>
+                  <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
+                    <span>{index + 1}.</span>
+                    <p id={index}>{a.title.slice(0, 30) + '...'}</p>
+                  </div>
+                </Link>
+                )
+              } else {
+                return(
+                  <Link to={`/page/${a._id.$oid}`}>
+                    <div className="boxten" id={index} onMouseEnter={() => preview({title : a.title,img: a.img, link: a._id.$oid, description : a.description})}>
+                      <span>{index + 1}.</span>
+                      <p id={index} >{a.title}</p>
+                    </div>
+                  </Link>
+                )
+              }
             })
             
           ) : (
